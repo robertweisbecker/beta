@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" portfolio-container="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <title>Robert Weisbecker</title>
+
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    border-radius: 0 !important;
+}
+
+p {
+  font-family: 'Lato';
+}
+
+h1 {
+    font-family: 'Vesper libre';
+    font-size: 1.5em;
+    }
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 1.25em;
+}
+
+p {
+	font-size: 16px;
+}
+
+
+header {
+  color: ;
+  z-index: 1200;
+}
+
+#brand {
+    position: fixed;
+    height: ;
+    width: 100%;
+    color: white;
+    padding: 3em 1em;
+    background-color: #27384B;
+}
+
+h1 {
+    line-height: 1em;
+    font-weight: 900;
+    font-size: 3em;
+    background-color: #27384B;
+}
+
+#brand h3 {
+    font-size: 28px;
+    color: #FA6464;
+}
+
+
+.sidebar {
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ffffff;
+    z-index: 2000;
+    box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+
+.list-group .list-group-item {
+  font-family: 'Lato';
+  color: #F95959;
+  font-weight: 200;
+  font-size: 1.25em;
+  border: none;
+}
+
+.list-group .list-group-item.active {
+  background-color: rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
+
+
+main {
+    top:-100vh;
+    background-color: #F5F5F5 ;
+    }
+
+.card {
+    margin: 24px 16px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.08);
+    -webkit-transition: all .25s cubic-bezier(.02,.01,.47,1);
+    -moz-transition: all .25s cubic-bezier(.02,.01,.47,1);
+    transition: all .25s cubic-bezier(.02,.01,.47,1);
+    height: 300px;
+    border: 0;
+}
+
+
+.card img {
+    height: 200px;
+}
+
+.card-block {
+    border-top: 1px solid #e0e0e0;
+    background-color: #F8EBEB;
+    transition: .3s ease-in-out;
+    height: 100px;
+}
+
+
+.card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: #3D4957;
+    border-bottom: 1px solid rgba(0,0,0,0.24);
+    padding-bottom: .5em;
+}
+
+
+.card-text {
+  font-size: .87em;
+  font-weight: lighter !important;
+  font-style: italic;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #F95959;
+}
+
+.card:hover {
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.16);
+    transform: translate(0,-8px);
+}
+
+.card:hover .card-block {
+	background-color: white;
+}
+
+</style>
+
+<body>
+
+
+<!--
+<header class="navbar">
+    <a href="#" class="navbar-name">ROBERT WEISBECKER</a>
+	<div class="navbar-link-container" id="collapsemenu">
+        <ul>
+            <li><a href="#intro">About</a></li>
+            <li><a href="#filters">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="header">
+  		<div class="col-xs-8 col-sm-12">
+  			<h1>Robert Weisbecker<br>
+  				<small style="">Art & Design Portfolio</small>
+  			</h1>
+    	</div>
+    	</div>
+
+	 </div>
+</div>
+-->
+
+
+<!--
+<div class="intro" id="intro">
+   <div class="text-wrapper">
+        <h1 class="text-center">Hi, I'm Bob.</h1>
+        <p class="body">I'm a 2016 graduate of the University of Michigan and current graduate student at the Maryland Institute College of Art (MICA), in Baltimore, MD, where I'm pursuing a Master's in User Experience Design. <br>
+        <br>Here you'll find a collection of my work, ranging from paintings and drawings to UX design and some reflections on my current coursework. Hit the link below to see my resume & feel free to contact me by sending a message below or shooting an email my way. Thanks for visiting.</p><br>
+        <a href="RobertWeisbecker.resume.12-16.pdf"><button class="btn-default pull-right">Resume -->
+
+
+<!-- filter bar --------------------------------------------------->
+
+
+<div class="top container-fluid">
+      <div id="brand" class="row">
+        <h1>Robert<br>Weisbecker</h1>
+      </div>
+
+    <header class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </header>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-4 col-md-3 sidebar" id="filters">
+        <ul class="list-group flex-xs-column" data-toggle="">
+            <li class="active list-group-item" data-filter="*">All</li>
+            <li class="list-group-item list-group-item-action" data-filter=".ux">UI/UX</li>
+            <li class="list-group-item list-group-item-action" data-filter=".art">Art</li>
+            <li class="list-group-item list-group-item-action" data-filter=".design">Graphic Design</li>
+        </ul>
+    </div>
+
+  <main class="col-sm-8 offset-sm-4 col-md-9 offset-md-3">
+      <div class="row no-gutters">
+        <div class="col-sm-4 col-xs-6">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-8 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="card">
+            <img class="card-img-top" src="http://placehold.it/250x200" alt="Card image cap">
+            <div class="card-block">
+                <h2 class="card-title">NPR Labs</h2>
+                <p class="card-text">Baltimore, MD</p>
+            </div>
+        </div>
+      </div>
+  </main>
+</div>
+
+<!-- GRID --------------------------------------------------->
+
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+<script>
+
+$('.modal').appendTo("body");
+
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
+
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.grid-sizer'
+  }
+});
+
+$( function() {
+  // init Isotope
+  var $container = $('.grid').isotope({
+    itemSelector: '.grid-item'
+  });
+
+  // store filter for each group
+  var filters = {};
+
+$container.imagesLoaded().progress( function() {
+  $container.isotope('layout');
+});
+
+  $('#filters').on( 'click', '.btn', function() {
+    var $this = $(this);
+    // get group key
+    var $buttonGroup = $this.parents('.btn-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+
+    // set filter for group
+    filters[ filterGroup ] = $this.attr('data-filter');
+
+    // combine filters
+    var filterValue = '';
+    for ( var prop in filters ) {
+      filterValue += filters[ prop ];
+    }
+
+    // set filter for Isotope
+    $container.isotope({ filter: filterValue });
+  });
+
+  $(".btn-group > .btn").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+});
+});
+
+
+$(document).ready(function() {
+  $(".modal").each(function(){
+    if(window.location.href.indexOf($(this).attr("id")) != -1){
+      $(this).modal('show');
+    }
+  });
+});
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<style> 
+
+* {
+	font-family: 'Inconsolata';
+    margin: 0;
+    padding: 0;
+	}
+
+	
+body {
+	position:relative;
+	box-sizing: border-box;
+	}
+	
+p {
+	font-family: 'Inconsolata';
+	}	
+	
+p.body {
+	font-family: 'Merriweather';
+	font-size: 18px;
+	line-height: 1.7;
+}
+	
+h1 {
+	font-family: 'Rubik';
+	}
+
+/* --------------------------------------------------- nav style */
+
+	
+.navbar {
+	box-shadow: 0 2px 40px 0 rgba(0,0,0,0.2);
+	background-color: rgba(255,255,255,.98);
+	padding: 0 0 0 24px;
+	z-index: 999;
+
+
+}
+
+.navbar-header .navbar-brand {
+	font-family: 'VT323';
+	color: #0517FF;
+	font-size: 30px;
+	letter-spacing: .75em;
+	}
+	
+.navbar-default .navbar-nav li a {
+	font-size: 18px;
+	color: #0517FF;
+	opacity: 1;
+	text-align: center;
+	}
+	
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+	background-color: #380cb0;
+	color: #FFFFFF;
+	transition: background-color 0.2s; 
+		-webkit-transition: background-color 0.2s;
+	}
+	
+	
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	font-style: ;
+}
+
+.navbar-toggle {
+	border: none;
+	}
+	
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: blue;
+	}
+	
+/* ---------------------------------------------------jumbotron style */
+	
+
+
+.jumbotron h1 {
+	font-family: 'Rubik';
+	text-transform: uppercase;
+	letter-spacing: 4pt;
+	}
+	
+.bg {
+	position: fixed;
+	width:100%;
+	right: 0;
+	z-index: -1;
+	}
+	
+.jumbotron {
+	background: transparent;
+	background-size: cover;
+	color: white;
+	}
+	
+	
+/* --------------------------------------------------- intro style */
+
+.intro {
+	background-color: #80ffd1;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);	  background-image: -ms-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 50px 50px;
+	}
+
+.intro p {
+	font-family: 'Merriweather';
+	background-color: #80ffd1;
+	}
+
+	
+/* --------------------------------------------------- filter bar style */
+
+
+	/*-------------buttons*/
+
+.btn-primary {
+  padding: 14px 24px;
+  margin-bottom: 0;
+  font-family: 'Inconsolata';
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: 0 none;
+  border-radius:;
+  padding: 10px 16px;
+  color: #3f0ec6;
+  background-color:white;
+}
+
+
+.btn-primary:hover {
+	color: #3f0ec6;
+    background-color: #80FFD1;
+    transition: background-color 0.4s; 
+		-webkit-transition: background-color 0.4s;
+}
+		
+.btn-default {
+  padding: 14px 24px;
+  margin-bottom: 0;
+  font-family: 'Inconsolata';
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: 0 none;
+  border-radius:;
+  padding: 10px 16px;
+  color: blue;
+  background-color:white;
+}
+
+
+.btn-default:hover {
+	background-color: #3f0ec6;
+	color: white;
+    transition: background-color 0.4s; 
+	-webkit-transition: background-color 0.4s;
+}
+
+
+button.btn.btn-default.active {
+	color: #151631 !important;
+	background-color: #80FFD1 !important;
+
+}
+
+.btn:focus, 
+.btn:active, 
+.btn.active, 
+.btn:focus:active {
+  background-image: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+	
+/*--------------------------------------------------- thumbnail grid style */
+	
+.grid, .grid-item .img-responsive {
+	margin: 0 auto;
+	}
+	
+		
+.grid-item-content {
+	padding:  !important;
+	margin: 0 0 40px 0 !important;
+	width: ;
+	max-width:350px;
+    max-height: 300px;
+	background:;
+	}
+	
+	
+/*--------------------------------------------------- hover effect */	
+
+	
+
+/*------------------------------------------------------------------ modals */
+
+
+
+/*---------------------------------------------------- footer */
+
+.contact-section1 {
+	background-color: #3f0ec6;
+	background-image: linear-gradient(30deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(150deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(30deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(150deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(60deg, #370CAC 25%, transparent 25.5%, transparent 75%, #370CAC 75%, #370CAC), 
+linear-gradient(60deg, #370CAC 25%, transparent 25.5%, transparent 75%, #370CAC 75%, #370CAC);
+background-size:40px 70px;
+background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+	color: white;
+	}
+
+.contact-section {
+	background-color: #3f0ec6;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 50px 50px;
+  -moz-background-size: 50px 50px;
+  background-size: 50px 50px;
+  color: white;
+  }
+
+
+.contact-section p {
+	background-color: #3f0ec6;
+	color: #e1e0d9;
+}
+
+.body a {
+	font-size: 16pt;
+	text-decoration: none;
+	color: #80FFD1;
+	}
+
+.body a:hover {
+	background-color: white;
+	color: blue;
+}
+
+.form-control {
+	background-color: #4F12F7;
+	border: none;
+	color: #80FFD1;
+	width: %;
+	height: 50px;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
+-moz-box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
+box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
+}
+
+
+.contact::-webkit-input-placeholder { color: white; }
+.contact:-moz-placeholder { color: white; }
+.contact::-moz-placeholder { color: white; }
+.contact:-ms-input-placeholder { color: white; }
+
+#residency .content img {
+	max-height: 300px;
+}
+
+.footer {
+	background-color: #250873;
+	color: #e1e0d9;
+	}
+
+/*-----------------------------------------xs ONLY-------*/
+
+@media screen and (max-width: 480px) {
+	
+	.bg {
+	background: url("images/jumbotron-mobile2.png") no-repeat center center;
+	height: 300px;
+	}
+	
+	.jumbotron {
+	height:300px;
+	margin-bottom:0;		
+
+	}
+
+	.hero h1 {
+	font-size: 28px;
+	margin-top: 80px;
+	}
+}
+	
+/*-----------------------------------------sm ONLY-------*/
+	
+@media screen and (min-width: 480px) and (max-width: 992px) {
+	.bg {
+		background: url("images/jumbotron-mobile.png") no-repeat center center;
+		height: 400px;
+	}
+	
+	.jumbotron {
+		height: 400px;
+
+	}
+			
+	.hero h1 {
+		font-size: 40px;
+		margin-top: 120px;
+	}
+	
+}	
+
+/*-----------------------------------------xs and sm-------*/
+
+@media screen and (max-width: 992px) {
+	
+	
+	.btn-default {
+		font-size: 14px;
+		}
+		
+	.modal-footer button.btn.btn-default {
+		width:100%;
+		background-color: #3f0ec6;
+		color: white;
+	}
+		
+	h3 {
+		font-size: 18px;
+		}
+
+	.form-control {
+		height: 30px;
+	}
+	
+	.mobile-caption h1 {
+		font-size: 16px;
+		margin: 10px auto 4px auto;
+		}
+		
+	.mobile-caption h2 {
+		font-size: 14px;
+		}
+		
+	.hovereffect {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		cursor: default;
+		background: #f4f4f4;
+		box-shadow: 0 20px 20px 0 rgba(0,0,0,0.08);
+		transition: cubic-bezier(.02,.01,.47,1);
+		}
+
+}
+
+/*-----------------------------------------md and lg-------*/
+
+@media screen and (min-width: 992px) {
+
+	.bg {
+	background: #332b22 url("images/jumbotron.png") no-repeat center center;
+	height: 500px;
+	top: 50px;
+	}
+
+	.jumbotron {
+	height:500px;;
+	}
+
+	.hero h1 {
+	margin-top: 150px;
+	}
+
+	.hovereffect {
+  	width: 100%;
+  	height: 100%;
+  	float: left;
+  	overflow: hidden;
+  	position: relative;
+  	text-align: center;
+  	cursor: default;
+  	background: #29097F;
+  	box-shadow: 0 20px 20px rgba(0,0,0,0.08);
+  	transition: all .3s cubic-bezier(.02,.01,.47,1);
+}
+
+	.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 50px 20px;
+	}
+
+	.hovereffect img {
+	display: block;
+	position: relative;
+	max-width: none;
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	}
+
+	.hovereffect:hover img {
+	  opacity: 0.2;
+	  filter: alpha(opacity=20);
+	  -webkit-transform: translate3d(0,0,0);
+	  transform: translate3d(0,0,0);
+	}
+
+	.grid-item-content:hover {
+	box-shadow: 0 40px 40px 0 rgba(0,0,0,0.24);
+	transform: translate(0,-8px);transition-delay: 0s !important;
+	}
+
+	.hovereffect h1 {
+	  color: #fff;
+	  opacity:0;
+	  text-align: center;
+	  position: relative;
+	  overflow: hidden;
+	  background-color: transparent;
+  
+	}
+
+	.hovereffect h2 {
+	  text-transform: uppercase;
+	  color: #fff;
+	  opacity:0;
+	  text-align: center;
+	  position: relative;
+	  font-size: 17px;
+	  overflow: hidden;
+	  padding-top:;
+	  padding-bottom: 1em;
+	  background-color: transparent;
+	}
+
+	.hovereffect h2:after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 2px;
+	  background: #fff;
+	  content: '';
+	  -webkit-transition: -webkit-transform 0.35s;
+	  transition: transform 0.35s;
+	  -webkit-transform: translate3d(-100%,0,0);
+	  transform: translate3d(-100%,0,0);
+	}
+
+	.hovereffect:hover h2:after {
+	  -webkit-transform: translate3d(0,0,0);
+	  transform: translate3d(0,0,0);
+	}
+
+	.hovereffect p {
+	  color: #FFF;
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	  transition: opacity 0.35s, transform 0.35s;
+	  -webkit-transform: translate3d(100%,0,0);
+	  transform: translate3d(100%,0,0);
+	}
+
+	.hovereffect:hover p, .hovereffect:hover h1, .hovereffect:hover h2 {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  -webkit-transform: translate3d(0,0,0);
+	  transform: translate3d(0,0,0);
+	}
+}
+
+
+</style>

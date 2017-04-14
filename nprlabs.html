@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Blog Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-new.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+  </head>
+
+  <style>
+  /*
+* Globals
+*/
+
+
+.jumbotron {
+  color: #ffffff;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 25%;
+  margin: 0;
+}
+
+/*@media (min-width: 48em) {
+html {
+  font-size: 18px;
+}
+}
+
+body {
+font-family: Georgia, "Times New Roman", Times, serif;
+color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: normal;
+color: #333;
+
+}*/
+
+
+/*
+* Override Bootstrap's default container.
+*/
+
+.container {
+max-width: 60rem;
+}
+
+
+/*
+* Masthead for nav
+*/
+
+/*.blog-masthead {
+margin-bottom: 3rem;
+background-color: #428bca;
+-webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+        box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+}*/
+
+/* Nav links */
+/*.nav-link {
+position: relative;
+padding: 1rem;
+font-weight: 500;
+color: #cdddeb;
+}
+.nav-link:hover,
+.nav-link:focus {
+color: #fff;
+background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+/*.nav-link.active {
+color: #fff;
+}
+.nav-link.active:after {
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 0;
+height: 0;
+margin-left: -.3rem;
+vertical-align: middle;
+content: "";
+border-right: .3rem solid transparent;
+border-bottom: .3rem solid;
+border-left: .3rem solid transparent;
+}*/
+
+
+/*
+* Blog name and description
+*/
+
+.blog-header {
+padding-bottom: 1.25rem;
+margin-bottom: 2rem;
+border-bottom: .05rem solid #eee;
+}
+.blog-title {
+margin-bottom: 0;
+font-size: 2rem;
+font-weight: normal;
+}
+.blog-description {
+font-size: 1.1rem;
+color: #999;
+}
+
+@media (min-width: 40em) {
+.blog-title {
+  font-size: 3.5rem;
+}
+}
+
+
+
+
+/*
+* Main column and sidebar layout
+*/
+
+/* Sidebar modules for boxing content */
+/*
+.blog-sidebar {
+  background-color: #ffffff
+}*/
+
+.sidebar-module {
+margin: 2rem 0 2rem -4rem;
+}
+
+.sidebar-module-inset {
+padding: 1rem;
+background-color: #e6e6e6;
+border-radius: .25rem;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+margin-bottom: 0;
+}
+
+
+/* Pagination */
+.blog-pagination {
+margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+border-radius: 2rem;
+}
+
+
+/*
+* Blog posts
+*/
+
+.blog-post {
+margin-bottom: 4rem;
+}
+.blog-post-title {
+margin-bottom: .25rem;
+font-size: 2.5rem;
+}
+.blog-post-meta {
+margin-bottom: 1.25rem;
+color: #999;
+}
+
+
+/*
+* Footer
+*/
+
+.blog-footer {
+padding: 2.5rem 0;
+color: #999;
+text-align: center;
+background-color: #f9f9f9;
+border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+margin-bottom: 0;
+}
+
+</style>
+
+
+
+<body>
+
+
+
+<nav class="navbar navbar-toggleable-md sticky-top navbar-light bg-faded">
+  <a class="navbar-brand" href="#">ROBERT WEISBECKER</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item"><a href="#intro" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="#filters" class="nav-link">Work</a></li>
+    <li class="nav-item"><a href="#contact"class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+    <!-- <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">New features</a>
+          <a class="nav-link" href="#">Press</a>
+          <a class="nav-link" href="#">New hires</a>
+          <a class="nav-link" href="#">About</a>
+        </nav>
+      </div>
+    </div> -->
+
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(https://images.unsplash.com/photo-1468817739446-479f000a4c0f?dpr=2&auto=compress,format&fit=crop&w=1199&h=779&q=80&cs=tinysrgb&crop=&bg=)">
+      <div class="container text-center">
+        <h1 class="display-3">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-md-2 offset-md-2 blog-sidebar hidden-md-down">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+
+            <div class="sticky">
+          <div class="sidebar-module">
+            <h4>Jump to section:</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Intro</a></li>
+              <li><a href="#">Background</a></li>
+              <li><a href="#">Usability Evaluation</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Proposal</a></li>
+              <li><a href="#">Conclusion</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Similar projects:</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div>
+
+        <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Multi-Space Pay Stations</h2>
+            <p class="blog-post-meta">November 2016</p>
+
+            <p>Project brief</p>
+            <hr>
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <img class="img-fluid" src="images/npr/map1.png" style="width:"/>
+            <img class="img-fluid" src="images/npr/map2.png" style="width:"/>
+            <h2>Problem Statement</h2>
+            <p>Our group has been tasked with identifying a commonly used consumer product that demonstrates poor application of humanmachine interaction guidelines and principles that we have learned in this course. This presentation will examine Multi-Space Pay Stations that are being installed in cities across the United States as a replacement for single head parking meters. We will note that while these new parking systems may make parking easier to manage for municipalities, they do so at the expense of users. We will go on to identify HMI principles that these systems violate, and propose improved designs.</p>
+
+            <h2>Background</h2>
+            <h3>History</h3>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+            <h3>Features</h3>
+            <ol>
+              <li>Reduced Cost in Maintenance
+                <ul>
+                  <li>Pay stations need service twice a month compared with meters which require service up to twice each week, and reduce staff costs. </li>
+                </ul>
+              </li>
+              <li>Less down time
+                <ul>
+                  <li>It is illegal to park at an inoperative/malfunctioning meter but if the pay station closest to you is inoperative, you can pay for your parking at ANY pay station and be on your way.
+                  </li>
+                </ul>
+              </li>
+              <li>Rate Flexibility
+                <ul>
+                  <li>Multiple rates can be programmed into the units to allow for rate changes, i.e., all day rates, after hour rates, etc.</li>
+                  <li>All rates can be programmed from a central computer instead of manually adjusting each individual meter.</li>
+                </ul>
+              </li>
+              <li>Less sidewalk clutter</li>
+                <ul>
+                  <li>Machines have a smaller footprint than single space meters, making for less obstruction in public walkways.</li>
+                </ul>
+              </li>
+              <li>Ability to use cloud-based payment systems (pay by smartphone)
+                <ul>
+                  <li>Makes credit card processing simple, and allows users to add more time if they need more time than initially expected.</li>
+                </ul>
+              </li>
+              <li>Big Data
+                <ul>
+                  <li>The information generated by these systems may give cities ideas to better serve citizens, see areas of greatest/least use, etc. </li>
+                </ul>
+              </li>
+              <li>Centralized operations and fund reporting
+                <ul>
+                  <li>Management happens in one online system</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h2>Usability</h2>
+            <h3>User Goals</h3>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <h3>User Flow Diagram</h3>
+            <h3>Pain Points</h3>
+              <h4>Kiosk Spacing</h4>
+              <h4>Display Contrast</h4>
+              <h4>Feedback</h4>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <h2>Evaluation Proposal</h2>
+            <h3>Variables</h3>
+            <h3>Hypothesis</h3>
+            <ul>
+              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+              <li>Donec id elit non mi porta gravida at eget metus.</li>
+              <li>Nulla vitae elit libero, a pharetra augue.</li>
+            </ul>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Another blog post</h2>
+            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">New feature</h2>
+            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul>
+              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+              <li>Donec id elit non mi porta gravida at eget metus.</li>
+              <li>Nulla vitae elit libero, a pharetra augue.</li>
+            </ul>
+
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+          </div><!-- /.blog-post -->
+
+          <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

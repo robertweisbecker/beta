@@ -1,0 +1,182 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+body {
+  font-family: 'Roboto';
+  background-color: #f6f6f6;
+}
+
+div {
+  display: block;
+}
+
+.card {
+  box-shadow:
+      0  0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+  height: 136px;
+  min-height: 136px;
+  margin: 8px;
+  position: relative;
+  overflow:;
+  background-color: white;
+  width: 344px;
+  transition: .2s ease-in-out;
+}
+
+
+.card-button {
+  outline: none;
+  position: relative;
+  display: inline-block;
+  line-height: 52px;
+  padding: 0 16px;
+  color: #ff1744;
+}
+
+.card span {
+	margin-top: -10px;
+}
+
+button {
+  border: none;
+  background: transparent;
+  margin: 0;
+  overflow: visible;
+  text-align: center;
+  box-sizing: border-box;
+  text-indent: 0px;
+  font: 13px;
+  text-transform: uppercase;
+}
+
+button.details {
+  position: absolute;
+  left: 300px;
+  top:12px;
+  text-transform: lowercase;
+  border: 1px solid;
+  border-radius: 200px;
+  line-height: 1.8;
+  padding: 0px 10px 0px 10px;
+}
+
+.card-action-bar {
+   position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  right: 0;
+  padding: 0 8px;
+  border-top: 1px solid #e0e0e0;
+  height: 52px;
+  background-color: #c5f9e6;
+  transition: .3s ease-in-out;
+}
+
+
+.thumbnail {
+  display: block;
+  position: absolute;
+  height: 60px;
+  width: 90px;
+  background-color: rgba(0, 0, 0, 0.38);
+  margin: 8px;
+}
+
+.card-title {
+  position: absolute;
+   left: 100px;
+  top: 8px;
+  font-size: 24px;
+  margin: 0;
+  padding: 0 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+h2 {
+    display: block;
+}
+.card-subtitle {
+  font-size: 14px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.54);
+  left: 100px;
+  top: 45px;
+  position: absolute;
+  padding: 0 16px;
+}
+
+p {
+  display: block;
+}
+
+.button-wrapper {
+  margin-left: 100px;
+}
+
+.card:hover {
+	box-shadow: 2px 4px 4px 0 rgba(0,0,0,.24);
+}
+
+.card:hover .card-action-bar {
+	background-color: white;
+}
+
+
+
+
+</style>
+
+<body>
+
+<div class="card">
+  <div class="thumbnail"></div>
+
+  <h2 class="card-title">WAMU 88.5</h2>
+  <span class="card-subtitle">Washington, DC</span>
+
+   <button class="card-button details" a href="#" title="Show:" data-toggle="popover" data-content="Content content content content" data-trigger="focus">i</a></button>
+
+
+  <div class="card-action-bar">
+    <div class="button-wrapper">
+    <button class="card-button">Coverage</button>
+
+    <button class="card-button">Contour</button>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="thumbnail"></div>
+
+  <h2 class="card-title">WYPR</h2>
+  <span class="card-subtitle">Baltimore, MD</span>
+
+  <div class="card-action-bar">
+    <button class="card-button">Coverage</button>
+
+    <button class="card-button">Contour</button>
+
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+
+}
+
+body {
+  background: #e7e7e7;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow:  0px 2px 40px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+#navbarText {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+h1 {
+	  font-family: 'Vesper libre';
+	  font-size: 1.5em;
+}
+
+h3 {
+	  font-family: 'Poppins';
+		font-size: 2em;
+	  font-weight: 700;
+	  color: #233142;
+		opacity: .87;
+}
+
+p.body {
+	font-family: 'Merriweather';
+	font-size: 1em;
+	line-height: 1.7;
+}
+
+
+
+
+.intro {
+	background-color: #80ffd1;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	background-image: -ms-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 50px 50px;
+	}
+
+.intro p {
+	font-family: '';
+	background-color: #80ffd1;
+	}
+
+.contact-section1 {
+	background-color: #3f0ec6;
+	background-image: linear-gradient(30deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(150deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(30deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(150deg, #240871 12%, transparent 12.5%, transparent 87%, #240871 87.5%, #240871),
+linear-gradient(60deg, #370CAC 25%, transparent 25.5%, transparent 75%, #370CAC 75%, #370CAC),
+linear-gradient(60deg, #370CAC 25%, transparent 25.5%, transparent 75%, #370CAC 75%, #370CAC);
+background-size:40px 70px;
+background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+	color: white;
+	}
+
+.contact-section {
+	background-color: #3f0ec6;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(128,255,209,.65), rgba(128,255,209,.65) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 50px 50px;
+  -moz-background-size: 50px 50px;
+  background-size: 50px 50px;
+  color: white;
+  }
+
+
+.contact-section p {
+	background-color: #3f0ec6;
+	color: #e1e0d9;
+}
+
+
+.form-control {
+	background-color: #4F12F7 !important;
+	border: none;
+	color: #ffffff;
+	width: %;
+	height: 50px;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
+-moz-box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
+box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
+}
+
+
+.contact::-webkit-input-placeholder, .contact:-moz-placeholder, .contact::-moz-placeholder, .contact:-ms-input-placeholder {
+	color: white !important;
+}
+
+
+.footer {
+	background-color: #250873;
+	color: #e1e0d9;
+	}
+
+
+
+</style>

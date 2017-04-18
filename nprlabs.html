@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>Robert Weisbecker</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -26,13 +27,17 @@
 
 
 .jumbotron {
-  color: #ffffff;
+  color:;
+  background: #494D57 url("images/npr/map-header.png") center center no-repeat;
+  background-size: auto 100%;
+  height: 100%;
+  min-height: 300px;
 }
 
 .sticky {
   position: sticky;
   position: -webkit-sticky;
-  top: 25%;
+  top: 0;
   margin: 0;
 }
 
@@ -151,14 +156,15 @@ color: #999;
 }*/
 
 .sidebar-module {
-margin: 2rem 0 2rem -4rem;
+  position: absolute;
+  top: 150px;
+  margin: 4rem 0 2rem 0;
 }
 
-.sidebar-module-inset {
-padding: 1rem;
-background-color: #e6e6e6;
-border-radius: .25rem;
+.sidebar-module ol {
+  line-height: 2rem;
 }
+
 
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -181,14 +187,15 @@ border-radius: 2rem;
 */
 
 .blog-post {
-margin-bottom: 4rem;
+margin: 4rem auto;
 }
 .blog-post-title {
-margin-bottom: .25rem;
+margin-bottom: 1rem;
 font-size: 2.5rem;
 }
+
 .blog-post-meta {
-margin-bottom: 1.25rem;
+margin-bottom: 1rem;
 color: #999;
 }
 
@@ -237,26 +244,25 @@ margin-bottom: 0;
       </div>
     </div> -->
 
-    <div class="jumbotron jumbotron-fluid" style="background-image: url(https://images.unsplash.com/photo-1468817739446-479f000a4c0f?dpr=2&auto=compress,format&fit=crop&w=1199&h=779&q=80&cs=tinysrgb&crop=&bg=)">
+    <div class="jumbotron jumbotron-fluid" style="">
       <div class="container text-center">
-        <h1 class="display-3">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1 class="display-3"></h1>
+        <p class="lead"></p>
       </div>
     </div>
 
     <div class="container-fluid">
-
       <div class="row">
 
         <div class="col-md-2 offset-md-2 blog-sidebar hidden-md-down">
-          <div class="sidebar-module sidebar-module-inset">
+          <!-- <div class="sidebar-module sidebar-module-inset">
             <h4>About</h4>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
+          </div> -->
 
-            <div class="sticky">
+        <div class="sticky">
           <div class="sidebar-module">
-            <h4>Jump to section:</h4>
+            <p class="lead">Contents:</p>
             <ol class="list-unstyled">
               <li><a href="#">Intro</a></li>
               <li><a href="#">Background</a></li>
@@ -266,24 +272,14 @@ margin-bottom: 0;
               <li><a href="#">Conclusion</a></li>
             </ol>
           </div>
-          <div class="sidebar-module">
-            <h4>Similar projects:</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div>
         </div><!-- /.blog-sidebar -->
       </div>
 
         <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Multi-Space Pay Stations</h2>
-            <p class="blog-post-meta">November 2016</p>
-
-            <p>Project brief</p>
+            <h2 class="blog-post-title">NPR Labs:<br>Mapping & Population System</h2>
+            <p class="blog-post-meta lead">Internship, Spring 2017</p>
             <hr>
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
             <blockquote>

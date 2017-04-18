@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #e7e7e7;
+  background: #;
 }
 
 .navbar {
@@ -44,25 +44,6 @@ p.body {
 	font-size: 1em;
 	line-height: 1.7;
 }
-
-
-
-
-.intro {
-	background-color: #80ffd1;
-	background-image: -webkit-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
-	background-image: -moz-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
-	background-image: -ms-repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
-	background-image: repeating-radial-gradient(center center, rgba(63,14,198,.5), rgba(63,14,198,.5) 1px, transparent 1px, transparent 100%);
-	-webkit-background-size: 50px 50px;
-	-moz-background-size: 50px 50px;
-	background-size: 50px 50px;
-	}
-
-.intro p {
-	font-family: '';
-	background-color: #80ffd1;
-	}
 
 .contact-section1 {
 	background-color: #3f0ec6;

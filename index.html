@@ -477,46 +477,28 @@ function setGradientByHour(element) {
   var currentHour = new Date().getHours();
   // Morning (5am - 11am)
   if( currentHour >= 5 && currentHour < 12) {
-<<<<<<< HEAD
-     element.classList.add("morning-gradient");
-=======
      element.classList.add("gradient-morning-muted");
->>>>>>> index-dev
+
      return;
   }
   // Afternoon (12pm - 5pm)
   if( currentHour >= 12 && currentHour < 17) {
-<<<<<<< HEAD
-     element.classList.add("afternoon-gradient");
-=======
      element.classList.add("gradient-afternoon");
->>>>>>> index-dev
      return;
   }
   // Evening (5pm - 8pm)
   if( currentHour >= 17 && currentHour < 20) {
-<<<<<<< HEAD
-     element.classList.add("evening-gradient");
-=======
      element.classList.add("gradient-evening");
->>>>>>> index-dev
+
      return;
   }
   // Nighttime (8pm - 5am)
   if( currentHour > 20) {
-<<<<<<< HEAD
-     element.classList.add("night-gradient");
-     return;
-  }
-  // Fall back
-  element.classList.add("night-gradient");
-=======
      element.classList.add("gradient-night");
      return;
   }
   // Fall back
   element.classList.add("gradient-night");
->>>>>>> index-dev
 }
 
 var gradientElements = document.querySelectorAll(".timed-gradient");

@@ -10,8 +10,8 @@
   <link rel="icon" href="favicon.ico?" type="image/x-icon">
 
 
-  <link href="https://fonts.googleapis.com/css?family=Vesper+Libre::400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Acme" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -26,6 +26,11 @@
 </head>
 
 <style>
+/**
+-----------------------------
+  fill gradients
+-----------------------------
+**/
 
 .gradient-default {
   background: rgba(246,46,36,1);
@@ -65,14 +70,42 @@
   background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.gradient-night-mutedx {
+.gradient-night-muted {
 background: -webkit-linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
-.gradient-nightx {
+.gradient-night {
   background: linear-gradient(90deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
   background: -webkit-linear-gradient(90deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
+}
+
+/**
+-----------------------
+    text gradients
+-----------------------
+**/
+
+.gradient-morning-text {
+  background: linear-gradient(135deg, #F8F8BA 0%, #00ABEE 100%);
+  background: -webkit-linear-gradient(135deg, #F8F8BA 0%, #00ABEE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-afternoon-text {
+  background: linear-gradient(0deg, #303395 0%, #B6EDF7 100%);
+  background: -webkit-linear-gradient(0deg, #303395 0%, #B6EDF7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-evening-text {
+  background: #0B486B;
+  background: -webkit-linear-gradient(to right, #F56217, #0B486B);
+  background: linear-gradient(to right, #F56217, #0B486B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-night-text {
@@ -92,7 +125,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 .introduction h1 {
   font-family: 'Rubik Mono One';
-  font-size: 90px;
+  letter-spacing: 1.5rem;
   text-overflow: wrap;
 }
 
@@ -210,7 +243,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 
 <nav class="navbar navbar-toggleable-xl sticky-top navbar-light bg-transparent">
-  <div class="container">
+  <!-- <div class="container"> -->
     <a class="navbar-brand" href="#">weisbecker.design</a>
 
 
@@ -230,7 +263,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 <div class="jumbotron jumbotron-fluid introduction">
   <div class="container-fluid text-center">
     <h1 class="timed-gradient" id="greeting"></h1>
-    <p class="lead">Welcome to my portfolio. <br>I hope you're not here mistakenly. </p>
+    <p class="lead">Welcome to my portfolio.<br>I hope you like what you see. </p>
     <br>
     <br>
     <!-- <p>Currently studying UX at <a href="https://www.mica.edu/Programs_of_Study/Graduate_Programs/UX_Design_(Online_MPS).html">MICA</a>
@@ -485,17 +518,17 @@ function setGradientByHour(element) {
   var currentHour = new Date().getHours();
   // Morning (5am - 11am)
   if( currentHour >= 5 && currentHour < 12) {
-     element.classList.add("gradient-morning-muted");
+     element.classList.add("gradient-morning-text");
      return;
   }
   // Afternoon (12pm - 5pm)
   if( currentHour >= 12 && currentHour < 17) {
-     element.classList.add("gradient-afternoon");
+     element.classList.add("gradient-afternoon-text");
      return;
   }
   // Evening (5pm - 8pm)
   if( currentHour >= 17 && currentHour < 20) {
-     element.classList.add("gradient-evening");
+     element.classList.add("gradient-evening-text");
      return;
   }
   // Nighttime (8pm - 5am)

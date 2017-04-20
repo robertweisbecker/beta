@@ -10,7 +10,7 @@
   <link rel="icon" href="favicon.ico?" type="image/x-icon">
 
 
-  <link href="https://fonts.googleapis.com/css?family=Vesper+Libre::400,700,900|Poppins:400,700|Lato:300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vesper+Libre::400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -34,29 +34,62 @@
   text-rendering: optimizeLegibility;
 }
 
-.header {
-  display: flex;
-  padding: 4em;
-  height: 600px;
-  align-items: center;
-  background-color: #233142;
+
+
+.jumbotron {
+  height: autp;
   color: #FCF8CD;
 }
 
-.header h1 {
+.default-gradient {
+  background: rgba(246,46,36,1);
+  background: -webkit-linear-gradient(top, rgba(246,46,36,1) 0%, rgba(255,54,121,1) 100%);
+  background: linear-gradient(to bottom, rgba(246,46,36,1) 0%, rgba(255,54,121,1) 100%);
+}
+
+.morning-gradient {
+  background: linear-gradient(135deg, #F8F8BA 0%, #00ABEE 100%);
+  background: -webkit-linear-gradient(135deg, #F8F8BA 0%, #00ABEE 100%);
+}
+
+.afternoon-gradient {
+  background: linear-gradient(0deg, #303395 0%, #B6EDF7 100%);
+  background: -webkit-linear-gradient(0deg, #303395 0%, #B6EDF7 100%);
+}
+
+.evening-gradient {
+  background: linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
+  background: -webkit-linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
+}
+
+/*.night-gradient {
+  background: rgba(0,32,63,1);
+  background: -webkit-linear-gradient(45deg, rgba(0,32,63,1) 0%, rgba(0,10,20,1) 100%);
+  background: linear-gradient(45deg, rgba(0,32,63,1) 0%, rgba(0,10,20,1) 100%);
+}*/
+
+.night-gradient {
+  background: linear-gradient(45deg, #0A0924 25%, #0C082B 50%, #4A0541 100%);
+  background: -webkit-linear-gradient(45deg, #0A0924 25%, #0C082B 50%, #4A0541 100%);
+}
+
+
+
+
+.introduction h1 {
   font-weight: 900;
   font-size: 3em;
   color: rgba(255,255,255,0.5);
 }
 
-.header p {
+.introduction p {
   font-family: 'Lato';
   font-size: 1.5em;
-  font-weight: lighter;
-  line-height: 1.6em;
+  font-weight: 100;
+  line-height: 1.6;
 }
 
-.header p.lead {
+.introduction p.lead {
   color: #ffffff;
   font-size: 2em;
   font-weight: 300;
@@ -68,9 +101,10 @@
     -webkit-transition: all .25s cubic-bezier(.02,.01,.47,1);
     -moz-transition: all .25s cubic-bezier(.02,.01,.47,1);
     transition: all .25s cubic-bezier(.02,.01,.47,1);
-    min-width: 50%;
     border: 1px solid #f5f5f5;
     /*background: #F95959;*/
+    border-radius: 0px;
+    color: #3D4957;
 }
 
 
@@ -80,7 +114,6 @@
 }
 
 .card.card-image-top {
-    min-width: 300px;
     height: auto;
     transition: all .25s cubic-bezier(.02,.01,.47,1);
 }
@@ -89,30 +122,28 @@
     border-top: 1px solid #f5f5f5;
     background-color: #F8EBEB;
     transition: .3s ease-in-out;
-}
-
-
-.card-title {
-    font-size: 1.25em;
-    line-height: 1em;
-    font-weight: bold;
-    font-family: 'Poppins';
-    color: #3D4957;
-    border-bottom: 1px solid rgba(0,0,0,0.24);
-    padding-bottom: .5em;
+    border-radius: 0px !important;
 }
 
 
 .card-text {
   font-size: .87em;
-  font-weight: lighter !important;
-  font-style: italic;
+  font-family: 'Lato';
+  font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
+}
+
+.card-subhead {
+  font-style: italic;
   color: #F95959;
 }
 
+.card-label {
+  opacity: 0;
+  margin-top: -2.25rem;
+  transition: .3s ease-in;
+}
 
 
 .card:hover {
@@ -125,9 +156,13 @@
   /*transform: translate(0,-5px);*/
 }
 
+.card:hover .card-label {
+	opacity: initial;
+}
+
 .grid-section {
   background: #;
-  padding-top: 4em;
+  margin-top: 4em;
 }
 
 .headline {
@@ -148,10 +183,12 @@
 <body>
 
 
-<nav class="navbar navbar-toggleable-md sticky-top navbar-light bg-faded">
-  <a class="navbar-brand" href="#">weisbecker.design</a>
-  <div class="collapse navbar-collapse" id="navbarText">
-	<ul class="navbar-nav mr-auto">
+<nav class="navbar navbar-toggleable-xl sticky-top navbar-light bg-faded">
+  <div class="container">
+    <a class="navbar-brand" href="#">weisbecker.design</a>
+
+
+  <ul class="nav navbar-nav ml-auto">
 		<li class="nav-item">
       <a href="#intro" class="nav-link">About</a>
     </li>
@@ -164,20 +201,17 @@
 	</ul>
 </nav>
 
-<div class="container-fluid header">
-  <div class="row">
-    <div class="col-md-2 offset-1">
-      <h1 class="">Good morning!</h1>
-    </div>
-
-    <div class="col-md-7 offset-md-1">
-      <p class="lead">Welcome to my portfolio. <br>I hope you're not here mistakenly. </p><br>
-      <p>Currently studying UX at <a href="https://www.mica.edu/Programs_of_Study/Graduate_Programs/UX_Design_(Online_MPS).html">MICA</a>
-      <p>Intern at <a href="http://nprlabs.org/">NPR Labs</a>
-      <p>I'm a 2016 graduate of the University of Michigan and current graduate student at the Maryland Institute College of Art (MICA), in Baltimore, MD, where I'm pursuing a Master's in User Experience Design.<p>Here you'll find a collection of my work, ranging from paintings and drawings to UX design and some reflections on my current coursework. Hit the link below to see my resume & feel free to contact me by sending a message below or shooting an email my way. <p>Thanks for visiting.</p>
-    </div>
+<div class="jumbotron jumbotron-fluid timed-gradient introduction">
+  <div class="container">
+    <h1 class="" id="greeting"></h1>
+    <p class="lead">Welcome to my portfolio. <br>I hope you're not here mistakenly. </p>
+    <br>
+    <br>
+    <!-- <p>Currently studying UX at <a href="https://www.mica.edu/Programs_of_Study/Graduate_Programs/UX_Design_(Online_MPS).html">MICA</a>
+    <p>Intern at <a href="http://nprlabs.org/">NPR Labs</a> -->
   </div>
 </div>
+
 
 <!-- <div class="jumbotron jumbotron-fluid hero">
   <div class="container">
@@ -209,7 +243,7 @@
 	<!-- fuck yeah buttons --------------------------------------->
 
 
-<div class="container grid-section">
+<div class="container-fluid grid-section">
 		<div class="row">
 			<div class="col-12 text-center headline">
 				<h3 class="text-center">Selected Work</h3>
@@ -233,123 +267,75 @@
 <!-- GRID --------------------------------------------------->
 
   <div class="row">
-    <div class="container-fluid grid-container">
+    <div class="container grid-container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
+
+        <div class="col-lg-6 grid-item">
           <div class="card" data-toggle="modal" data-target="#npr">
-            <div class="card-header">
-              <small class="text-muted">Caption</small>
-            </div>
-					  <img class="card-image-top img-fluid" src="images/thumb/npr.png">
-						 <div class="card-block">
-						  <h2 class="card-title">NPR Labs</h2>
-                <p class="card-text">Internship, 2017</p>
-             </div>
-				  </div>
-			  </div>
-
-  			<div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
-  				<div class="card" data-toggle="modal" data-target="#podcast">
-  					<img class="card-image-top img-fluid" src="images/thumb/podcast-thumbnail.png" >
-  						<div class="card-block">
-  							<h2 class="card-title">Apple Podcasts</h2>
-  						</div>
-              <div class="card-footer">
-                <small class="text-muted">Caption</small>
-              </div>
-  				</div>
-  			</div>
-
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
-				<div class="card" data-toggle="modal" data-target="#muxd">
-					<img class="card-image-top img-fluid" src="images/thumb/muxd1-thumbnail.png" >
-						<div class="card-block">
-							<h2 class="card-title">Apple Podcasts</h2>
-							<p class="card-text">Personal Project</p>
-						</div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
-            </div>
-				</div>
-			</div>
-
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
-				<div class="card" data-toggle="modal" data-target="#residency">
-					<img class="card-image-top img-fluid" src="images/thumb/muxd-residency-thumbnail.png" >
-						<div class="card-block">
-							<h2 class="card-title">MICA UX</h2>
-							<p class="card-text">Residency 1</p>
-						</div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
-            </div>
-				</div>
-			</div>
-
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
-        <div class="card" data-toggle="modal" data-target="#residency">
-          <img class="card-image-top img-fluid" src="https://www.placehold.it/300x250" >
+					  <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400">
             <div class="card-block">
-              <h2 class="card-title">Title</h2>
-              <p class="card-text">Subtitle</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
+               <h5 class="card-title">Title</h5>
+               <p class="card-text card-subhead">Description</p>
+               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
       </div>
 
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
-				<div class="card" data-toggle="modal" data-target="#residency">
-					<img class="card-image-top img-fluid" src="https://www.placehold.it/300x250" >
-						<div class="card-block">
-							<h2 class="card-title">Title</h2>
-							<p class="card-text">Subtitle</p>
-						</div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
-            </div>
-				</div>
-			</div>
-
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
-        <div class="card" data-toggle="modal" data-target="#residency">
-          <img class="card-image-top img-fluid" src="https://www.placehold.it/300x250" >
+        <div class="col-lg-6 grid-item">
+          <div class="card mb-3" data-toggle="modal" data-target="#residency">
+            <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
             <div class="card-block">
-              <h2 class="card-title">Title</h2>
-              <p class="card-text">Subtitle</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
+               <h5 class="card-title">Title</h5>
+               <p class="card-text card-subhead">Description</p>
+               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
       </div>
 
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
+      <div class="col-lg-6 grid-item">
         <div class="card" data-toggle="modal" data-target="#residency">
-          <img class="card-image-top img-fluid" src="https://www.placehold.it/300x250" >
-            <div class="card-block">
-              <h2 class="card-title">Title</h2>
-              <p class="card-text">Subtitle</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
-            </div>
+          <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+          <div class="card-block">
+             <h5 class="card-title">Title</h5>
+             <p class="card-text card-subhead">Description</p>
+             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
         </div>
       </div>
 
-      <div class="col-xs-8 col-sm-6 col-lg-4 grid-item">
+      <div class="col-lg-6 grid-item">
         <div class="card" data-toggle="modal" data-target="#residency">
-          <img class="card-image-top img-fluid" src="https://www.placehold.it/300x250" >
-            <div class="card-block">
-              <h2 class="card-title">Title</h2>
-              <p class="card-text">Subtitle</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Caption</small>
-            </div>
-        </div>
+          <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+          <div class="card-block">
+             <h5 class="card-title">Title</h5>
+             <p class="card-text card-subhead">Description</p>
+             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
       </div>
+    </div>
+
+    <div class="col-lg-6 grid-item">
+      <div class="card" data-toggle="modal" data-target="#residency">
+        <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+        <div class="card-block">
+           <h5 class="card-title">Title</h5>
+           <p class="card-text card-subhead">Description</p>
+           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-lg-6 grid-item">
+      <div class="card" data-toggle="modal" data-target="#residency">
+        <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+        <div class="card-block">
+           <h5 class="card-title">Title</h5>
+           <p class="card-text card-subhead">Description</p>
+           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    </div>
+
 
 		</div>
 
@@ -366,14 +352,14 @@
 	<div class="container fluid">
 		<div class="row">
 		<br><br><br><br>
-			<div class="col-md-6 col-md-push-6">
+			<div class="col-lg-6 col-md-push-6">
 				<br>
 				<h2 class="hidden-sm-down">What's up?</h2>
 				<h1 class="hidden-md-up">Contact</h1><br>
 				<p class="body">If you've got any questions or comments about my work, potential opportunities, or you just want someone to bounce Westworld theories off of, then get in touch with the form here or send me a message via <a href="mailto:rpw@robertweisbecker.com">email</a> or <a href="https://www.linkedin.com/in/robertweisbecker"> LinkedIn</a>.</p><br>
 			</div>
 
-			<div class="col-md-6 col-md-pull-6">
+			<div class="col-lg-6 col-md-pull-6">
 				<h1 class="hidden-xs hidden-sm">Contact</h1><br>
 				<form id="contactform" class="form-horizontal" role="form" method="post" action="https://formspree.io/rpw@robertweisbecker.com">
 
@@ -465,6 +451,70 @@ $(document).ready(function() {
     $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
     $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
 });
+
+function setGradientByHour(element) {
+  var currentHour = new Date().getHours();
+  // Morning (5am - 11am)
+  if( currentHour >= 5 && currentHour < 12) {
+     element.classList.add("morning-gradient");
+     return;
+  }
+  // Afternoon (12pm - 5pm)
+  if( currentHour >= 12 && currentHour < 17) {
+     element.classList.add("afternoon-gradient");
+     return;
+  }
+  // Evening (5pm - 8pm)
+  if( currentHour >= 17 && currentHour < 20) {
+     element.classList.add("evening-gradient");
+     return;
+  }
+  // Nighttime (8pm - 5am)
+  if( currentHour > 20) {
+     element.classList.add("night-gradient");
+     return;
+  }
+  // Fall back
+  element.classList.add("night-gradient");
+}
+
+var gradientElements = document.querySelectorAll(".timed-gradient");
+
+gradientElements.forEach( function (element) {
+  setGradientByHour(element);
+});
+
+// Change intro h1 based on time
+
+function setInnerHTMLByHour(element) {
+  var currentHour = new Date().getHours();
+  // Morning (3am - 11pm)
+  if( currentHour >= 3 && currentHour < 12) {
+     element.innerHTML = "Good Morning!";
+     return;
+  }
+  // Afternoon (12pm - 5pm)
+  if( currentHour >= 12 && currentHour < 17) {
+     element.innerHTML = "Good Afternoon!";
+     return;
+  }
+  // Evening (5pm - 3am)
+  if( currentHour >= 17) {
+     element.innerHTML = "Good Evening!";
+     return;
+  }
+
+  if( currentHour >= 0 && currentHour < 3) {
+     element.innerHTML = "Good Evening!";
+     return;
+  }
+
+  element.innerHTML = "Greetings";
+
+}
+  var greeting = document.getElementById("greeting");
+
+  setInnerHTMLByHour(greeting);
 
 </script>
 

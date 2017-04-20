@@ -11,6 +11,7 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Vesper+Libre::400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -64,38 +65,52 @@
   background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.gradient-night-muted {
+.gradient-night-mutedx {
 background: -webkit-linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
+.gradient-nightx {
+  background: linear-gradient(90deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
+  background: -webkit-linear-gradient(90deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
+}
 
-.gradient-night {
-  background: linear-gradient(135deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
-  background: -webkit-linear-gradient(135deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
+.gradient-night-text {
+  background: -webkit-linear-gradient(-45deg, #4A0541 0%, #3E2B4D 100%);
+  background: linear-gradient(-45deg, #4A0541 0%, #3E2B4D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .jumbotron {
-  height: 40rem;
-  color: #FCF8CD;
+  height: auto;
+  /*color: #FCF8CD;*/
+  color: #3D4957;
+  background-color: white;
+  overflow-wrap: break-word;
 }
 
 .introduction h1 {
-  font-weight: 700;
-  letter-spacing: 1rem;
-  font-size: 5em;
-  color: rgba(255,255,255,0.5);
+  font-family: 'Rubik Mono One';
+  font-size: 90px;
+  text-overflow: wrap;
+}
+
+.introduction h1::after {
+  content: '';
+  text-shadow: 0 8px 20px rgba(0,0,0,.5);
+  color: transparent;
 }
 
 .introduction p {
   font-family: 'Lato';
-  font-size: 1.5em;
+  font-size: 1rem;
   font-weight: 100;
   line-height: 1.6;
 }
 
 .introduction p.lead {
-  color: #ffffff;
+  color: #;
   font-size: 2em;
   font-weight: 300;
 }
@@ -118,9 +133,15 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   display: none;
 }
 
-.card.card-image-top {
+/*.card.card-image-top {
     height: auto;
     transition: all .25s cubic-bezier(.02,.01,.47,1);
+}*/
+
+
+.card img {
+  height: auto;
+  width: 100%;
 }
 
 .card-block {
@@ -140,7 +161,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .card-subhead {
-  font-style: italic;
+  font-style:;
   color: #F95959;
 }
 
@@ -206,9 +227,9 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 	</ul>
 </nav>
 
-<div class="jumbotron jumbotron-fluid timed-gradient introduction">
-  <div class="container text-left">
-    <h1 class="" id="greeting"></h1>
+<div class="jumbotron jumbotron-fluid introduction">
+  <div class="container-fluid text-center">
+    <h1 class="timed-gradient" id="greeting"></h1>
     <p class="lead">Welcome to my portfolio. <br>I hope you're not here mistakenly. </p>
     <br>
     <br>
@@ -252,20 +273,6 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 		<div class="row">
 			<div class="col-12 text-center headline">
 				<h3 class="text-center">Selected Work</h3>
-
-
-        <!-- <div class="btn-group">
-            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                class="glyphicon glyphicon-th"></span>Grid</a>
-        </div> -->
-
-    			<!-- <div class="btn-group btn-group-center" id="filters">
-     				<button class="btn btn-default active" data-filter="*">All</button>
-      				<button class="btn btn-default" data-filter=".ux">UI/UX</button>
-      				<button class="btn btn-default" data-filter=".art">Art</button>
-      				<button class="btn btn-default" data-filter=".design">Graphic Design</button>
-				</div> -->
 			</div>
 		</div>
 
@@ -277,32 +284,54 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
         <div class="col-lg-6 grid-item">
           <div class="card" data-toggle="modal" data-target="#npr">
-					  <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400">
+					  <img class="card-image-top img-fluid" src="images/thumb/maps-loading-rectangle.png" alt="https://www.placehold.it/700x400">
             <div class="card-block">
-               <h5 class="card-title">Title</h5>
-               <p class="card-text card-subhead">Description</p>
-               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+               <h5 class="card-title">NPR Labs: Mapping & Population System</h5>
+               <p class="card-text card-subhead">Internship, Spring 2017</p>
+               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See Project</small></p>
             </div>
         </div>
       </div>
 
         <div class="col-lg-6 grid-item">
           <div class="card mb-3" data-toggle="modal" data-target="#residency">
-            <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+            <img class="card-image-top img-fluid" src="images/thumb/podcast-logo-rectangle.png" />
             <div class="card-block">
-               <h5 class="card-title">Title</h5>
-               <p class="card-text card-subhead">Description</p>
-               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+               <h5 class="card-title">Case Study: Baltimore Beach Volleyball</h5>
+               <p class="card-text card-subhead">Maryland Institute College of Art</p>
+               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See case study</small></p>
             </div>
         </div>
       </div>
 
       <div class="col-lg-6 grid-item">
+        <div class="card mb-3" data-toggle="modal" data-target="#residency">
+          <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+          <div class="card-block">
+             <h5 class="card-title">Commuter App Project</h5>
+             <p class="card-text card-subhead">Maryland Institute College of Art</p>
+             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See proposal</small></p>
+          </div>
+      </div>
+    </div>
+
+      <div class="col-lg-6 grid-item">
+        <div class="card" data-toggle="modal" data-target="#residency">
+          <img class="card-image-top img-fluid" src="images/thumb/hci-thumbnail-rectangle.png" />
+          <div class="card-block">
+             <h5 class="card-title">Human Factors Analysis: Street Parking</h5>
+             <p class="card-text card-subhead">Maryland Institute College of Art</p>
+             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-lg-6 grid-item">
         <div class="card" data-toggle="modal" data-target="#residency">
           <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
           <div class="card-block">
-             <h5 class="card-title">Title</h5>
-             <p class="card-text card-subhead">Description</p>
+             <h5 class="card-title">Apple Podcasts Redesign Proposal</h5>
+             <p class="card-text card-subhead">Personal Project</p>
              <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -327,26 +356,21 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
            <p class="card-text card-subhead">Description</p>
            <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-    </div>
-    </div>
-
-    <div class="col-lg-6 grid-item">
-      <div class="card" data-toggle="modal" data-target="#residency">
-        <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
-        <div class="card-block">
-           <h5 class="card-title">Title</h5>
-           <p class="card-text card-subhead">Description</p>
-           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-    </div>
+      </div>
     </div>
 
-
-		</div>
 
 	</div>
-
   </div>
+</div>
+
+  <div class="container-fluid workshop">
+    <div class="row">
+      <div class="col">
+      </div>
+    </div>
+  </div>
+
   </div>
 </section>
 
@@ -476,9 +500,14 @@ function setGradientByHour(element) {
   }
   // Nighttime (8pm - 5am)
   if( currentHour > 20) {
-     element.classList.add("gradient-night");
+     element.classList.add("gradient-night-text");
      return;
   }
+  if( currentHour >= 0 && currentHour <5) {
+     element.classList.add("gradient-night-text");
+     return;
+  }
+
   // Fall back
   element.classList.add("gradient-night");
 }

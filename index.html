@@ -11,7 +11,7 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Acme|Work+Sans" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -65,6 +65,7 @@
   background: linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
   background: -webkit-linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
 }
+
 .gradient-sunset {
   background: #0B486B;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
@@ -108,9 +109,8 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .gradient-evening-text {
-  background: #0B486B;
-  background: -webkit-linear-gradient(to right, #F56217, #0B486B);
-  background: linear-gradient(to right, #F56217, #0B486B);
+  background: linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
+  background: -webkit-linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -123,16 +123,19 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .jumbotron {
-  height: auto;
   /*color: #FCF8CD;*/
   color: #3D4957;
-  background-color: white;
+  background: #fefefe;
   overflow-wrap: break-word;
+  height: 100vh;
+
 }
 
 .introduction h1 {
+  margin-top: 25vh;
   font-family: 'Rubik Mono One';
   font-size: 72px;
+  word-spacing: -36px;
   text-overflow: wrap;
 }
 
@@ -151,7 +154,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 .introduction p.lead {
   color: #;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -191,7 +194,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 .card-block {
     border-top: 1px solid #f5f5f5;
-    background-color: #F8EBEB;
+    background-color: #f8f7f9;
     transition: .3s ease-in-out;
     border-radius: 0px !important;
 }
@@ -236,8 +239,9 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   margin-top: 4em;
 }
 
-.headline {
+.headline h3 {
   margin: 4em 0;
+  font-family: 'Work Sans';
 }
 
 #filters {
@@ -276,6 +280,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   <div class="container-fluid text-center">
     <h1 class="timed-gradient" id="greeting"></h1>
     <p class="lead">Welcome to my portfolio.<br>I hope you like what you see. </p>
+    <p class="">Lorem ipsum lorem upsum</p>
     <br>
     <br>
     <!-- <p>Currently studying UX at <a href="https://www.mica.edu/Programs_of_Study/Graduate_Programs/UX_Design_(Online_MPS).html">MICA</a>

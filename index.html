@@ -16,10 +16,11 @@
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-new.css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 
   <title>Robert Weisbecker</title>
 
@@ -29,9 +30,9 @@
 
 /** hidden in progress **/
 
-.commuter, .podcasts, .residency {
+/*.commuter, .podcasts, .residency {
   display: none;
-}
+}*/
 
 /**
 -----------------------------
@@ -175,6 +176,9 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     color: #3D4957;
 }
 
+.card-title {
+  font-family: 'Work Sans';
+}
 
 .card-header {
   background-color: #ffffff;
@@ -222,7 +226,8 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 .card:hover {
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.16);
-    transform: translate(0,-20px);
+    /*transform: translate(0,-20px) */
+    transform: scale(1.05);
 }
 
 .card:hover .card-block {
@@ -333,10 +338,10 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     <div class="container grid-container">
       <div class="row">
 
-        <div class="col-lg-6 grid-item">
+        <div class="col-lg-4 col-md-6 grid-item">
           <a href="nprlabs.html">
           <div class="card" data-toggle="modal" data-target="#npr">
-					  <img class="card-image-top img-fluid" src="images/thumb/maps-loading-rectangle.png" alt="https://www.placehold.it/700x400">
+					  <img class="card-image-top img-fluid" src="images/thumb/maps-loading-rectangle.png" alt="https://www.placehold.it/750x400">
             <div class="card-block">
                <h5 class="card-title">NPR Labs: Mapping & Population System</h5>
                <p class="card-text card-subhead">Internship, Spring 2017</p>
@@ -346,7 +351,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         </a>
       </div>
 
-        <div class="col-lg-6 grid-item">
+        <div class="col-lg-4 col-md-6 grid-item">
           <a href="bbv.html">
           <div class="card mb-3" data-toggle="modal" data-target="#bbv">
             <img class="card-image-top img-fluid" src="images/baltimore-beach/bbv-rectangle.jpg" />
@@ -359,7 +364,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         </a>
       </div>
 
-      <div class="col-lg-6 grid-item commuter">
+      <div class="col-lg-4 col-md-6 grid-item commuter">
         <div class="card mb-3" data-toggle="modal" data-target="#commuter">
           <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
           <div class="card-block">
@@ -370,7 +375,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       </div>
     </div>
 
-      <div class="col-lg-6 grid-item">
+      <div class="col-lg-4 col-md-6 grid-item">
         <div class="card" data-toggle="modal" data-target="#hci">
           <img class="card-image-top img-fluid" src="images/thumb/hci-thumbnail-rectangle.png" />
           <div class="card-block">
@@ -381,7 +386,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       </div>
       </div>
 
-      <div class="col-lg-6 grid-item podcasts">
+      <div class="col-lg-4 col-md-6 grid-item podcasts">
         <div class="card" data-toggle="modal" data-target="#podcasts">
           <img class="card-image-top img-fluid" src="images/thumb/podcast-logo-rectangle.png" />
           <div class="card-block">
@@ -392,7 +397,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         </div>
       </div>
 
-      <div class="col-lg-6 grid-item muxd">
+      <div class="col-lg-4 col-md-6 grid-item muxd">
         <a href="muxd.html">
         <div class="card" data-toggle="modal" data-target="#residency">
           <img class="card-image-top img-fluid" src="images/muxd/muxd-rectangle.png" >
@@ -405,7 +410,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       </a>
     </div>
 
-    <div class="col-lg-6 grid-item residency">
+    <div class="col-lg-4 col-md-6 grid-item residency">
       <a href="residency.html">
       <div class="card" data-toggle="modal" data-target="#residency">
         <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >

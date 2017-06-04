@@ -16,10 +16,11 @@
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-new.css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 
   <title>Robert Weisbecker</title>
 
@@ -29,7 +30,7 @@
 
 /** hidden in progress **/
 
-.commuter, .podcasts, .residency {
+.muxd, .card-label {
   display: none;
 }
 
@@ -175,6 +176,9 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     color: #3D4957;
 }
 
+.card-title {
+  font-family: 'Work Sans';
+}
 
 .card-header {
   background-color: #ffffff;
@@ -209,20 +213,19 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .card-subhead {
-  font-style:;
   color: #F95959;
 }
 
 .card-label {
   opacity: 0;
-  margin-top: -2.25rem;
   transition: .3s ease-in;
 }
 
 
 .card:hover {
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.16);
-    transform: translate(0,-20px);
+    /*transform: translate(0,-20px) */
+    transform: scale(1.05);
 }
 
 .card:hover .card-block {
@@ -264,15 +267,19 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 
   <ul class="nav navbar-nav ml-auto">
-		<li class="nav-item">
-      <a href="#intro" class="nav-link">About</a>
+    <li class="nav-item">
+      <a href="#filters" class="nav-link">Portfolio</a>
     </li>
 		<li class="nav-item">
-      <a href="#filters" class="nav-link">Work</a>
+      <a href="#intro" class="nav-link">Bio</a>
     </li>
 		<li class="nav-item">
-      <a href="#contact"class="nav-link">Contact</a>
+      <a href="#contact"class="nav-link">Workshop</a>
     </li>
+    <li class="nav-item">
+      <a href="#contact"class="nav-link">Studio</a>
+    </li>
+
 	</ul>
 </nav>
 
@@ -319,7 +326,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 	<!-- fuck yeah buttons --------------------------------------->
 
-
+<section>
 <div class="container-fluid grid-section">
 		<div class="row">
 			<div class="col-12 text-center headline">
@@ -333,12 +340,15 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     <div class="container grid-container">
       <div class="row">
 
-        <div class="col-lg-6 grid-item">
+        <div class="col-lg-4 col-md-6 grid-item npr">
           <a href="nprlabs.html">
-          <div class="card" data-toggle="modal" data-target="#npr">
-					  <img class="card-image-top img-fluid" src="images/thumb/maps-loading-rectangle.png" alt="https://www.placehold.it/700x400">
+          <div class="card"  data-target="#npr">
+					  <img class="card-image-top img-fluid" src="images/thumb/thumb2/npr.png" alt="https://www.placehold.it/700x700" />
+            <div class="card-img-overlay">
+              <h4 class="card-title">Card title</h4>
+            </div>
             <div class="card-block">
-               <h5 class="card-title">NPR Labs: Mapping & Population System</h5>
+               <h4 class="card-title">NPR Labs</h4>
                <p class="card-text card-subhead">Internship, Spring 2017</p>
                <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See Project</small></p>
             </div>
@@ -346,12 +356,12 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         </a>
       </div>
 
-        <div class="col-lg-6 grid-item">
+        <div class="col-lg-4 col-md-6 grid-item">
           <a href="bbv.html">
-          <div class="card mb-3" data-toggle="modal" data-target="#bbv">
-            <img class="card-image-top img-fluid" src="images/baltimore-beach/bbv-rectangle.jpg" />
+          <div class="card mb-3"  data-target="#bbv">
+            <img class="card-image-top img-fluid" src="images/thumb/thumb2/bbv.png" alt="https://www.placehold.it/700x700" />
             <div class="card-block">
-               <h5 class="card-title">Case Study: Baltimore Beach Volleyball</h5>
+               <h5 class="card-title">Baltimore Beach Volleyball</h5>
                <p class="card-text card-subhead">Maryland Institute College of Art</p>
                <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See case study</small></p>
             </div>
@@ -359,9 +369,9 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         </a>
       </div>
 
-      <div class="col-lg-6 grid-item commuter">
-        <div class="card mb-3" data-toggle="modal" data-target="#commuter">
-          <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+      <div class="col-lg-4 col-md-6 grid-item commuter">
+        <div class="card mb-3"  data-target="#commuter">
+          <img class="card-image-top img-fluid" src="images/thumb/thumb2/muter.png" alt="https://www.placehold.it/700x700" />
           <div class="card-block">
              <h5 class="card-title">Commuter App Project</h5>
              <p class="card-text card-subhead">Maryland Institute College of Art</p>
@@ -369,35 +379,40 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
           </div>
       </div>
     </div>
+  </div>
 
-      <div class="col-lg-6 grid-item">
-        <div class="card" data-toggle="modal" data-target="#hci">
-          <img class="card-image-top img-fluid" src="images/thumb/hci-thumbnail-rectangle.png" />
+  <div class="row no-gutters">
+
+      <div class="col-lg-3 col-md-6 grid-item">
+        <div class="card"  data-target="#hci">
+          <img class="card-image-top img-fluid" src="images/thumb/thumb2/HCI_4.png" />
           <div class="card-block">
-             <h5 class="card-title">Human Factors Analysis: Street Parking</h5>
+             <h6 class="card-title">Human Factors: Street Parking</h5>
              <p class="card-text card-subhead">Maryland Institute College of Art</p>
              <p class="card-text card-label text-uppercase text-right"><small class="text-muted">In development. Check back later!</small></p>
           </div>
       </div>
       </div>
 
-      <div class="col-lg-6 grid-item podcasts">
-        <div class="card" data-toggle="modal" data-target="#podcasts">
-          <img class="card-image-top img-fluid" src="images/thumb/podcast-logo-rectangle.png" />
+      <div class="col-lg-3 col-md-6 grid-item podcasts">
+        <a href="">
+        <div class="card" data-target="#podcasts">
+          <img class="card-image-top img-fluid" src="images/thumb/thumb2/podcasts.png" />
           <div class="card-block">
-             <h5 class="card-title">Apple Podcasts Redesign Proposal</h5>
+             <h6 class="card-title">Podcasts Redesign</h5>
              <p class="card-text card-subhead">Personal Project</p>
-             <p class="card-text card-label text-uppercase text-right"><small class="text-muted"></small></p>
+             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Text</small></p>
           </div>
         </div>
+        </a>
       </div>
 
-      <div class="col-lg-6 grid-item muxd">
+      <div class="col-lg-3 col-md-6 grid-item muxd">
         <a href="muxd.html">
-        <div class="card" data-toggle="modal" data-target="#residency">
+        <div class="card"  data-target="#residency">
           <img class="card-image-top img-fluid" src="images/muxd/muxd-rectangle.png" >
           <div class="card-block">
-             <h5 class="card-title">Powells.com & Nature.org</h5>
+             <h6 class="card-title">Powells.com & Nature.org</h5>
              <p class="card-text card-subhead">UX Foundations, MICA</p>
              <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 2 hours ago</small></p>
           </div>
@@ -405,12 +420,54 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       </a>
     </div>
 
-    <div class="col-lg-6 grid-item residency">
+    <div class="col-lg-3 col-md-6 grid-item residency">
       <a href="residency.html">
-      <div class="card" data-toggle="modal" data-target="#residency">
-        <img class="card-image-top img-fluid" src="https://www.placehold.it/700x400" >
+      <div class="card" data-target="#residency">
+        <img class="card-image-top img-fluid" src="images/thumb/thumb2/Registrar_1.png" alt="https://www.placehold.it/700x700" >
         <div class="card-block">
-           <h5 class="card-title">Title</h5>
+           <h6 class="card-title">UofM Web Design</h5>
+           <p class="card-text card-subhead">Stamps School of Art & Design</p>
+           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 grid-item residency">
+      <a href="residency.html">
+      <div class="card" data-target="#residency">
+        <img class="card-image-top img-fluid" src="images/thumb/thumb2/PP_2.png" alt="https://www.placehold.it/700x700" />
+        <div class="card-img-overlay">
+          <h4 class="card-title" style="color: white">Card title</h4>
+        </div>
+        <div class="card-block">
+           <h6 class="card-title">Parking Panda</h5>
+           <p class="card-text card-subhead">Internship, Summer 2015</p>
+           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 grid-item residency">
+      <a href="residency.html">
+      <div class="card" data-target="#residency">
+        <img class="card-image-top img-fluid" src="images/thumb/thumb2/PP_1.png" alt="https://www.placehold.it/700x700" >
+        <div class="card-block">
+           <h6 class="card-title">Title</h5>
+           <p class="card-text card-subhead">Description</p>
+           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 grid-item freelance">
+      <a href="design.html">
+      <div class="card" data-target="#freelance">
+        <img class="card-image-top img-fluid" src="images/thumb/thumb2/fb.png" alt="https://www.placehold.it/700x700" >
+        <div class="card-block">
+           <h6 class="card-title">Freelance Design</h5>
            <p class="card-text card-subhead">Description</p>
            <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
@@ -422,19 +479,16 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 	</div>
   </div>
 </div>
-
-  <div class="container-fluid workshop">
-    <div class="row">
-      <div class="col">
-      </div>
-    </div>
-  </div>
-
-  </div>
 </section>
 
-
-<br><br><br>
+<section>
+  <div class="container-fluid grid-section">
+		<div class="row">
+			<div class="col-12 text-center headline">
+				<h3 class="text-center m-sm-5">Workshop</h3>
+			</div>
+		</div>
+  </div>
 
 <!-- <section class="contact-section container-fluid" id="contact">
 	<div class="container fluid">
@@ -558,7 +612,7 @@ function setGradientByHour(element) {
      return;
   }
   // Nighttime (8pm - 5am)
-  if( currentHour > 20) {
+  if( currentHour >= 20) {
      element.classList.add("gradient-night-text");
      return;
   }

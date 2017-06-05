@@ -22,19 +22,6 @@ body {
 }
 
 
-h1 {
-	  font-family: 'Vesper libre';
-	  font-size: 1.5em;
-}
-
-h3 {
-	  font-family: 'Poppins';
-		font-size: 2em;
-	  font-weight: 700;
-	  color: #233142;
-		opacity: .87;
-}
-
 p.body {
 	font-family: 'Merriweather';
 	font-size: 1em;
@@ -98,6 +85,28 @@ box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
 	color: #f2f4e1;
 	}
 
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 24px;
+    }
+  }
 
 
 </style>

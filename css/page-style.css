@@ -1,0 +1,188 @@
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+	box-sizing: border-box;
+
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*@media (min-width: 48em) {
+html {
+  font-size: 18px;
+}
+}*/
+
+body {
+  background: #ffffff;
+  font-family: 'Lato';
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+font-family: 'Lato';
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 1);
+  box-shadow:  0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  overflow-x: scroll;
+  font-family: 'Work Sans';
+}
+
+.scroll-line{
+  height: 2px;
+  margin-bottom: 0px;
+  background: #ef8b80;
+  width: 0%;
+}
+
+p.body {
+	font-family: 'Merriweather';
+	font-size: 1em;
+	line-height: 1.7;
+}
+
+.footer {
+	background-color: #4755a4;
+	color: #f2f4e1;
+	}
+
+
+
+.main {
+max-width: 70rem;
+}
+
+.main p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  font-family: 'Merriweather';
+
+}
+
+.jumbotron {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  min-height: 20rem;
+}
+
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+  margin: 0;
+}
+
+/*
+* Override Bootstrap's default container.
+*/
+
+
+@media (min-width: 40em) {
+/*.jumbotron {
+   min-height: 200px;
+   background-size: auto;*/
+}
+
+}
+
+.sidebar {
+  margin-top: 3rem;
+  margin-left: 0;
+  font-size: .87rem;
+}
+
+.sidebar ol {
+  line-height: 2rem;
+}
+
+.sidebar-inset p:last-child,
+.sidebar-inset ul:last-child,
+.sidebar-inset ol:last-child {
+margin-bottom: 0;
+}
+
+
+/* Pagination */
+/*.pagination {
+margin-bottom: 4rem;
+}
+.pagination > .btn {
+border-radius: 2rem;
+}*/
+
+
+/*
+* Blog posts
+*/
+
+
+.page-title {
+margin-top: 2rem;
+padding-bottom: 1.25rem;
+margin-bottom: 2rem;
+border-bottom: .05rem solid #eee;
+}
+
+.page-title-2 {
+margin-top: 8rem;
+padding-bottom: 1.25rem;
+margin-bottom: 2rem;
+max-width: 60rem;
+}
+
+.section {
+margin: 2rem auto;
+}
+
+.section-title {
+margin-bottom: 1rem;
+}
+
+
+.section-meta {
+  color: #F95959;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.page-description {
+font-size: 1.1rem;
+color: #999;
+}
+
+
+
+
+/*
+* Footer
+*/
+
+.footer {
+padding: 2.5rem 0;
+color: #999;
+text-align: center;
+background-color: #f9f9f9;
+border-top: .05rem solid #e5e5e5;
+}
+.footer p:last-child {
+margin-bottom: 0;
+}
+
+</style>

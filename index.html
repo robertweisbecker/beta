@@ -11,7 +11,7 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Acme|Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Acme|Work+Sans:400,700,900" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="css/pagestyle.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -20,10 +20,18 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-100486484-1', 'auto');
+  ga('send', 'pageview');
 
-  <title>Robert Weisbecker</title>
+</script>
 
+<title>Robert Weisbecker</title>
 </head>
 
 <style>
@@ -127,36 +135,75 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   /*color: #FCF8CD;*/
   color: #3D4957;
   background: #fefefe;
-  overflow-wrap: break-word;
-  max-height: 600px;
 
 }
 
-.introduction h1 {
+.jumbotron h1 {
   margin-top:;
   font-family: 'Rubik Mono One';
-  font-size: 72px;
+  font-size: 4.5rem;
   word-spacing: -36px;
   text-overflow: wrap;
+  overflow-wrap: break-word;
 }
 
-.introduction h1::after {
+/*.jumbotron h1 {
+  margin-top:;
+  font-family: 'Work Sans';
+  font-weight: 900;
+  font-size: 72px;
+  word-spacing: 0px;
+  text-overflow: wrap;
+}*/
+
+
+.jumbotron h1::after {
   content: '';
   text-shadow: 0 8px 20px rgba(0,0,0,.5);
   color: transparent;
 }
 
-.introduction p {
+.jumbotron p {
   font-family: 'Lato';
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.6;
 }
 
-.introduction p.lead {
-  color: #;
+.jumbotron p.lead {
   font-size: 2rem;
   font-weight: 300;
+}
+
+#intro p.lead {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.jumbotron a {
+  text-decoration:none;
+  box-shadow: inset 0 -1px 0 #ef8b80;
+  color: inherit;
+  transition: 0.2s cubic-bezier(.33,.66,.66,1);
+}
+
+.jumbotron a:hover {
+  background-color: #ef8b80;
+}
+
+.faces {
+  text-align: center;
+  height: 250px;
+  max-width: 200px;
+  background-image: url(images/face1.png);
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faces:hover {
+  background-image: url(images/face2.png);
 }
 
 .grid-item a:hover {
@@ -165,42 +212,34 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .card {
-    margin: 24px 16px;
+    margin: 1.5rem auto;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.08);
     -webkit-transition: all .25s cubic-bezier(.02,.01,.47,1);
     -moz-transition: all .25s cubic-bezier(.02,.01,.47,1);
     transition: all .25s cubic-bezier(.02,.01,.47,1);
     border: 1px solid #f5f5f5;
     /*background: #F95959;*/
-    border-radius: 0px;
+    /*border-radius: 0px;*/
     color: #3D4957;
+    overflow: hidden;
 }
 
 .card-title {
   font-family: 'Work Sans';
 }
 
-.card-header {
-  background-color: #ffffff;
-  display: none;
-}
-
-/*.card.card-image-top {
-    height: auto;
-    transition: all .25s cubic-bezier(.02,.01,.47,1);
-}*/
-
-
 .card img {
   height: auto;
   width: 100%;
+  transition: opacity .3s ease-out;
 }
 
 .card-block {
-    border-top: 1px solid #f5f5f5;
+    border-color: 1px solid #f5f5f5;
     background-color: #f8f7f9;
     transition: .3s ease-in-out;
-    border-radius: 0px !important;
+    /*border-radius: 0px !important;*/
+    overflow: hidden;
 }
 
 
@@ -212,7 +251,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   text-overflow: ellipsis;
 }
 
-.card-subhead {
+.card-subtitle{
   color: #F95959;
 }
 
@@ -221,20 +260,27 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   transition: .3s ease-in;
 }
 
-
 .card:hover {
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.16);
-    /*transform: translate(0,-20px) */
     transform: scale(1.05);
 }
 
 .card:hover .card-block {
 	background-color: white;
-  /*transform: translate(0,-5px);*/
 }
 
-.card:hover .card-label {
-	opacity: initial;
+.card-inverse .card-img-overlay {
+  opacity: 0;
+  transition: .25s ease-in;
+}
+
+.card-inverse:hover .card-label,
+.card-inverse:hover .card-img-overlay {
+	opacity: 1;
+}
+
+.card-inverse:hover .card-img {
+  opacity: .12;
 }
 
 .grid-section {
@@ -243,16 +289,27 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .headline h3 {
-  margin:;
   font-family: 'Work Sans';
 }
 
-#filters {
-  display: none;
+
+@media (max-width: 48rem) {
+  .jumbotron h1 {
+    font-size: 54px;
+  }
+
+  .jumbotron p.lead {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
 }
 
-@media (max-width: 575px) {
-
+@media (max-width: 62rem) {
+    .jumbotron p.lead {
+      margin-top: 2rem;
+      text-align: center;
+    }
 
 }
 
@@ -261,17 +318,15 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 <body>
 
 
-<nav class="navbar navbar-toggleable-xl sticky-top navbar-light bg-transparent">
+<nav class="navbar navbar-toggleable-xl hidden-sm-down sticky-top navbar-light bg-transparent">
   <!-- <div class="container"> -->
-    <a class="navbar-brand" href="#">weisbecker.design</a>
-
-
+  <a class="navbar-brand" href="#">Robert Weisbecker</a>
   <ul class="nav navbar-nav ml-auto">
     <li class="nav-item">
-      <a href="#filters" class="nav-link">Portfolio</a>
+      <a href="#filters" class="nav-link active">Portfolio</a>
     </li>
 		<li class="nav-item">
-      <a href="#intro" class="nav-link">Bio</a>
+      <a href="#about" class="nav-link">Bio</a>
     </li>
 		<li class="nav-item">
       <a href="#contact"class="nav-link">Workshop</a>
@@ -279,22 +334,48 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     <li class="nav-item">
       <a href="#contact"class="nav-link">Studio</a>
     </li>
-
 	</ul>
 </nav>
 
-<div class="jumbotron jumbotron-fluid introduction">
-  <div class="container-fluid text-center">
-    <h1 class="timed-gradient mt-5" id="greeting"></h1>
-    <p class="lead">Welcome to my portfolio.<br>I hope you like what you see. </p>
-    <p class="">Lorem ipsum lorem upsum</p>
-    <br>
-    <br>
-    <!-- <p>Currently studying UX at <a href="https://www.mica.edu/Programs_of_Study/Graduate_Programs/UX_Design_(Online_MPS).html">MICA</a>
-    <p>Intern at <a href="http://nprlabs.org/">NPR Labs</a> -->
+<nav class="navbar navbar-toggleable-xl hidden-md-up fixed-bottom navbar-light">
+  <!-- <div class="container"> -->
+  <ul class="nav navbar-nav mx-auto">
+    <li class="nav-item">
+      <a href="#filters" class="nav-link active">Portfolio</a>
+    </li>
+		<li class="nav-item">
+      <a href="#about" class="nav-link">Bio</a>
+    </li>
+		<li class="nav-item">
+      <a href="#contact"class="nav-link">Workshop</a>
+    </li>
+    <li class="nav-item">
+      <a href="#contact"class="nav-link">Studio</a>
+    </li>
+	</ul>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container-fluid">
+    <h1 class="timed-gradient mt-5 text-center" id="greeting"></h1>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col faces"></div>
+      <div class="col-lg-8 push-lg-1">
+        <p class="lead">Welcome to my portfolio.</p>
+        <div id="intro">
+          <p class="lead">I’m a product designer and graduate student at <a href="https://www.mica.edu/">MICA</a>.
+          <br>
+          <p class="lead">This summer, I'll be designing educational tools at <a href="http://everfi.com/">EverFi</a>, in Washington, DC. Previously, I’ve worked at <a href="http://www.npr.org/">NPR</a> & <a href="https://www.parkingpanda.com/">Parking Panda</a> and graduated from the <a href="http://umich.edu/">University of Michigan</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<hr>
+
+<hr class="my-4">
+
 
 
 <!-- <div class="jumbotron jumbotron-fluid hero">
@@ -313,7 +394,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 		<div class="col-xs-12 col-md-8">
 			<h1 class="text-center">Hi, I'm Bob.</h1>
 
-			<br><p class="body">I'm a 2016 graduate of the University of Michigan and current graduate student at the Maryland Institute College of Art (MICA), in Baltimore, MD, where I'm pursuing a Master's in User Experience Design. <br>
+			<br><p class="body">I'm a 2016 graduate of the University of Michigan and current graduate student at MICA (MICA), in Baltimore, MD, where I'm pursuing a Master's in User Experience Design. <br>
 			<br>Here you'll find a collection of my work, ranging from paintings and drawings to UX design and some reflections on my current coursework. Hit the link below to see my resume & feel free to contact me by sending a message below or shooting an email my way. Thanks for visiting.</p><br>
 			<a href="RobertWeisbecker.resume.12-16.pdf"><button class="btn-default pull-right">Resume -></button></a>
 		</div>
@@ -343,14 +424,14 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         <div class="col-lg-4 col-md-6 grid-item npr">
           <a href="nprlabs.html">
           <div class="card"  data-target="#npr">
-					  <img class="card-image-top img-fluid" src="images/thumb/thumb2/npr.png" alt="https://www.placehold.it/700x700" />
-            <div class="card-img-overlay">
+					  <img class="card-img-top img-fluid" src="images/thumb/thumb2/npr.png" alt="https://www.placehold.it/700x700" />
+            <!-- <div class="card-img-overlay">
               <h4 class="card-title">Card title</h4>
-            </div>
+            </div> -->
             <div class="card-block">
                <h4 class="card-title">NPR Labs</h4>
-               <p class="card-text card-subhead">Internship, Spring 2017</p>
-               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See Project</small></p>
+               <p class="card-text card-subtitle">Internship, Spring 2017</p>
+               <!-- <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See Project</small></p> -->
             </div>
         </div>
         </a>
@@ -359,11 +440,10 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
         <div class="col-lg-4 col-md-6 grid-item">
           <a href="bbv.html">
           <div class="card mb-3"  data-target="#bbv">
-            <img class="card-image-top img-fluid" src="images/thumb/thumb2/BBV_2.png" alt="https://www.placehold.it/700x700" />
+            <img class="card-img-top img-fluid" src="images/thumb/thumb2/BBV_2.png" alt="https://www.placehold.it/700x700" />
             <div class="card-block">
                <h5 class="card-title">Baltimore Beach Volleyball</h5>
-               <p class="card-text card-subhead">Maryland Institute College of Art</p>
-               <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See case study</small></p>
+               <p class="card-text card-subtitle">Maryland Institute College of Art</p>
             </div>
         </div>
         </a>
@@ -371,25 +451,20 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
       <div class="col-lg-4 col-md-6 grid-item commuter">
         <div class="card mb-3"  data-target="#commuter">
-          <img class="card-image-top img-fluid" src="images/thumb/thumb2/muter.png" alt="https://www.placehold.it/700x700" />
+          <img class="card-img-top img-fluid" src="images/thumb/thumb2/muter.png" alt="https://www.placehold.it/700x700" />
           <div class="card-block">
              <h5 class="card-title">Commuter App Project</h5>
-             <p class="card-text card-subhead">Maryland Institute College of Art</p>
-             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See proposal</small></p>
+             <p class="card-text card-subtitle">Maryland Institute College of Art</p>
           </div>
       </div>
     </div>
-  </div>
-
-  <div class="row no-gutters">
 
       <div class="col-lg-3 col-md-6 grid-item">
         <div class="card"  data-target="#hci">
-          <img class="card-image-top img-fluid" src="images/thumb/thumb2/HCI_4.png" />
+          <img class="card-img-top img-fluid" src="images/thumb/thumb2/HCI_4.png" />
           <div class="card-block">
-             <h6 class="card-title">Human Factors: Street Parking</h5>
-             <p class="card-text card-subhead">Maryland Institute College of Art</p>
-             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">In development. Check back later!</small></p>
+             <h6 class="card-title">Human Factors of Parking</h5>
+             <p class="card-text card-subtitle">Maryland Institute College of Art</p>
           </div>
       </div>
       </div>
@@ -397,11 +472,10 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       <div class="col-lg-3 col-md-6 grid-item podcasts">
         <a href="">
         <div class="card" data-target="#podcasts">
-          <img class="card-image-top img-fluid" src="images/thumb/thumb2/podcasts.png" />
+          <img class="card-img-top img-fluid" src="images/thumb/thumb2/podcasts.png" />
           <div class="card-block">
              <h6 class="card-title">Podcasts Redesign</h5>
-             <p class="card-text card-subhead">Personal Project</p>
-             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Text</small></p>
+             <p class="card-text card-subtitle">Personal Project</p>
           </div>
         </div>
         </a>
@@ -410,11 +484,10 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       <div class="col-lg-3 col-md-6 grid-item muxd">
         <a href="muxd.html">
         <div class="card"  data-target="#residency">
-          <img class="card-image-top img-fluid" src="images/muxd/muxd-rectangle.png" >
+          <img class="card-img-top img-fluid" src="images/muxd/muxd-rectangle.png" >
           <div class="card-block">
              <h6 class="card-title">Powells.com & Nature.org</h5>
-             <p class="card-text card-subhead">UX Foundations, MICA</p>
-             <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 2 hours ago</small></p>
+             <p class="card-text card-subtitle">UX Foundations, MICA</p>
           </div>
       </div>
       </a>
@@ -423,11 +496,10 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     <div class="col-lg-3 col-md-6 grid-item residency">
       <a href="residency.html">
       <div class="card" data-target="#residency">
-        <img class="card-image-top img-fluid" src="images/thumb/thumb2/Registrar_1.png" alt="https://www.placehold.it/700x700" >
+        <img class="card-img-top img-fluid" src="images/thumb/thumb2/Registrar_1.png" alt="https://www.placehold.it/700x700" >
         <div class="card-block">
            <h6 class="card-title">UofM Web Design</h5>
-           <p class="card-text card-subhead">Stamps School of Art & Design</p>
-           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+           <p class="card-text card-subtitle">Stamps School of Art & Design</p>
         </div>
       </div>
       </a>
@@ -435,48 +507,46 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
     <div class="col-lg-3 col-md-6 grid-item residency">
       <a href="residency.html">
-      <div class="card" data-target="#residency">
-        <img class="card-image-top img-fluid" src="images/thumb/thumb2/PP_2.png" alt="https://www.placehold.it/700x700" />
+      <div class="card card-inverse" style="background-color: #000; border-color: #000;">
+        <img class="card-img img-fluid" src="images/thumb/thumb2/PP_2.png" alt="https://www.placehold.it/700x700" />
         <div class="card-img-overlay">
-          <h4 class="card-title" style="color: white">Card title</h4>
+          <!-- <h4 class="card-title" style="color: white">Parking Panda</h4>
+           <p class="card-text">Internship, Summer 2015</p> -->
+           <p class="text-center mt-5 align-middle" style="color: #fff;">View work &#9755;</p>
         </div>
+        <div class="card-footer text-center">
+          <h6 class="card-title">Parking Panda</h6>
+        <p class="card-text card-subtitle">Internship, Summer 2015</p>
+      </div>
+      </div>
+      </a>
+    </div>
+
+
+    <div class="col-lg-3 col-md-6 grid-item residency">
+      <a href="residency.html">
+      <div class="card" data-target="#residency">
+        <img class="card-img-top img-fluid" src="images/thumb/thumb2/PP_2.png" alt="https://www.placehold.it/700x700" >
         <div class="card-block">
            <h6 class="card-title">Parking Panda</h5>
-           <p class="card-text card-subhead">Internship, Summer 2015</p>
-           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+           <p class="card-text card-subtitle">Internship, Summer 2015</p>
         </div>
       </div>
       </a>
     </div>
 
-    <div class="col-lg-3 col-md-6 grid-item residency">
-      <a href="residency.html">
-      <div class="card" data-target="#residency">
-        <img class="card-image-top img-fluid" src="images/thumb/thumb2/PP_1.png" alt="https://www.placehold.it/700x700" >
-        <div class="card-block">
-           <h6 class="card-title">Title</h5>
-           <p class="card-text card-subhead">Description</p>
-           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      </a>
-    </div>
-
-    <div class="col-lg-3 col-md-6 grid-item freelance">
+    <div class="col-lg-3 col-md-6 grid-item art">
       <a href="design.html">
-      <div class="card" data-target="#freelance">
-        <img class="card-image-top img-fluid" src="images/thumb/thumb2/fb.png" alt="https://www.placehold.it/700x700" >
+      <div class="card" data-target="#art">
+        <img class="card-img-top img-fluid" src="images/thumb/thumb2/Art.png" alt="https://www.placehold.it/700x700" >
         <div class="card-block">
-           <h6 class="card-title">Freelance Design</h5>
-           <p class="card-text card-subhead">Description</p>
-           <p class="card-text card-label text-uppercase text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+           <h6 class="card-title">Artwork</h5>
+           <p class="card-text card-subtitle">Paintings & Drawings</p>
         </div>
       </div>
       </a>
     </div>
 
-
-	</div>
   </div>
 </div>
 </section>

@@ -1,53 +1,30 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:100,300,300i,400,400i|Gentium+Basic" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style-new.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/page-style.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <!-- Custom styles for this template -->
+  <!-- Custom styles for this template -->
 
-  <title>Robert Weisbecker</title>
+<title>Page Title</title>
 
-  </head>
+</head>
 
-  <style>
-  /*
-* Globals
-*/
-
-
-/*@media (min-width: 48em) {
-html {
-  font-size: 18px;
-}*/
-
-
-
-.main {
-max-width: 70rem;
-}
-
-.main p {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 2rem;
-  font-family: 'Merriweather';
-
-}
+<style>
 
 .jumbotron {
   background: #494D57 url("images/npr/map-header-bg.png") center center no-repeat;
@@ -57,117 +34,13 @@ max-width: 70rem;
   min-height: 20rem;
 }
 
-
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 150px;
-  margin: 0;
-}
-
-/*
-* Override Bootstrap's default container.
-*/
-
-
-@media (min-width: 40em) {
-/*.jumbotron {
-   min-height: 200px;
-   background-size: auto;*/
-}
-
-}
-
-.sidebar {
-  margin-top: 3rem;
-  margin-left: 0;
-  font-size: .87rem;
-}
-
-.sidebar ol {
-  line-height: 2rem;
-}
-
-.sidebar-inset p:last-child,
-.sidebar-inset ul:last-child,
-.sidebar-inset ol:last-child {
-margin-bottom: 0;
-}
-
-
-/* Pagination */
-/*.pagination {
-margin-bottom: 4rem;
-}
-.pagination > .btn {
-border-radius: 2rem;
-}*/
-
-
-/*
-* Blog posts
-*/
-
-
-.page-title {
-margin-top: 2rem;
-padding-bottom: 1.25rem;
-margin-bottom: 2rem;
-border-bottom: .05rem solid #eee;
-}
-
-.page-title-2 {
-margin-top: 8rem;
-padding-bottom: 1.25rem;
-margin-bottom: 2rem;
-max-width: 60rem;
-}
-
-.section {
-margin: 2rem auto;
-}
-
-.section-title {
-margin-bottom: 1rem;
-}
-
-
-.section-meta {
-  color: #F95959;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-
-.page-description {
-font-size: 1.1rem;
-color: #999;
-}
-
-
-
-
-/*
-* Footer
-*/
-
-.footer {
-padding: 2.5rem 0;
-color: #999;
-text-align: center;
-background-color: #f9f9f9;
-border-top: .05rem solid #e5e5e5;
-}
-.footer p:last-child {
-margin-bottom: 0;
-}
-
 </style>
 
 
 
 <body>
 
-<div class="fixed-top">
+<div class="fixed-top hidden-sm-down">
   <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
     <a class="navbar-brand" href="index.html">Robert Weisbecker</a>
     <ul class="nav navbar-nav ml-auto">
@@ -186,6 +59,23 @@ margin-bottom: 0;
   	</ul>
   </nav>
   <div class="scroll-line"></div>
+</div>
+
+<div class="fixed-bottom hidden-md-up">
+  <div class="scroll-line"></div>
+  <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a href="#filters" class="nav-link">Home</a>
+      </li>
+  		<li class="nav-item">
+        <a href="#intro" class="nav-link">Bio</a>
+      </li>
+  		<li class="nav-item">
+        <a href="#contact"class="nav-link">Workshop</a>
+      </li>
+  	</ul>
+  </nav>
 </div>
 
 

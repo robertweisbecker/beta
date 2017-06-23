@@ -8,9 +8,29 @@
 
 }
 
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   background: #ffffff;
+  font-family: 'Lato';
 }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+font-family: 'Lato';
+}
+
+/*.main p {
+  font-family: 'Merriweather';
+  color: #555555;
+}*/
 
 .navbar {
   background: rgba(255, 255, 255, 1);
@@ -21,18 +41,11 @@ body {
   font-family: 'Work Sans';
 }
 
-
-h1 {
-	  font-family: 'Vesper libre';
-	  font-size: 1.5em;
-}
-
-h3 {
-	  font-family: 'Poppins';
-		font-size: 2em;
-	  font-weight: 700;
-	  color: #233142;
-		opacity: .87;
+.scroll-line{
+  height: 2px;
+  margin-bottom: 0px;
+  background: #ef8b80;
+  width: 0%;
 }
 
 p.body {

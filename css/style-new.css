@@ -8,9 +8,29 @@
 
 }
 
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   background: #ffffff;
+  font-family: 'Lato';
 }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+font-family: 'Lato';
+}
+
+/*.main p {
+  font-family: 'Merriweather';
+  color: #555555;
+}*/
 
 .navbar {
   background: rgba(255, 255, 255, 1);
@@ -21,6 +41,12 @@ body {
   font-family: 'Work Sans';
 }
 
+.scroll-line{
+  height: 2px;
+  margin-bottom: 0px;
+  background: #ef8b80;
+  width: 0%;
+}
 
 p.body {
 	font-family: 'Merriweather';
@@ -85,28 +111,6 @@ box-shadow: inset -5px 5px 0px 0px rgba(56,13,176,1);
 	color: #f2f4e1;
 	}
 
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 16px;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 18px;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 24px;
-    }
-  }
 
 
 </style>

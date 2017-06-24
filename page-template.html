@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:100,300,300i,400,400i|Gentium+Basic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:300,300i,400,400i,700,900|Spectral" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
 
@@ -38,7 +38,7 @@
 
 
 
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="60">
 
 <div class="fixed-top hidden-sm-down">
   <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
@@ -61,12 +61,21 @@
   <div class="scroll-line"></div>
 </div>
 
+<div class="hidden-md-up">
+  <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+    <a class="navbar-brand" href="index.html">Robert Weisbecker</a>
+  </nav>
+</div>
+
 <div class="fixed-bottom hidden-md-up">
   <div class="scroll-line"></div>
   <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
-    <ul class="nav justify-content-center">
+    <ul class="nav mx-auto">
       <li class="nav-item">
         <a href="#filters" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#filters" class="nav-link">Portfolio</a>
       </li>
   		<li class="nav-item">
         <a href="#intro" class="nav-link">Bio</a>
@@ -78,24 +87,23 @@
   </nav>
 </div>
 
-
-<!-- <div class="container">
-  <div class="page-title-2">
-      <h1 class="display-3">NPR Labs:</h1>
-      <h2 class="display-4 mb-4"> Mapping & Population System</h2>
-      <p class="lead">Internship, Spring 2017</p>
-  </div>
-</div> -->
-
 <div class="jumbotron jumbotron-fluid" style="">
-  <div class="container text-center">
-    <h1 class="display-3"></h1>
-    <p class="lead"></p>
+  <div class="col-10 offset-lg-2 offset-sm-1">
+    <h1 class="display-3">NPR Labs:</h1>
+    <h2 class="display-4"> Mapping & Population System</h2>
   </div>
 </div>
 
 
-<div class="page-title">
+<!-- <div class="page-title hidden-md-up">
+  <div class="container">
+      <h1 class="">NPR Labs:</h1>
+      <h2 class="mb-2"> Mapping & Population System</h2>
+      <p class="lead">Internship, Spring 2017</p>
+  </div>
+</div>
+
+<div class="page-title hidden-sm-down">
   <div class="container">
     <div class="col-12">
         <h1 class="display-3">NPR Labs:</h1>
@@ -103,11 +111,11 @@
         <p class="lead">Internship, Spring 2017</p>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
-<div class="container main">
+<div class="container-fluid">
 
     <div class="row">
 
@@ -119,10 +127,33 @@
         </div>
       </div> -->
 
-      <div class="section col-2 hidden-md-down">
-          <div class="sidebar sticky ml-2">
-            <p class="lead">Contents:</p>
-            <ol class="list-unstyled">
+      <!-- <div class="col-2 hidden-md-down">
+          <div id="sidebar" class="sticky">
+            <p class="">Jump to:</p>
+            <nav class="nav flex-column">
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#design">Design</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#development">Development</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#conclusion">Conclusion</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </div> -->
+
+      <div class="col-md-2 offset-md-1 offset-lg-2 hidden-md-down">
+        <br>
+          <div id="sidebar" class="sticky">
+              <h6 class="">Jump to:</h6>
+                <ol class="list-unstyled">
               <li><a href="#overview">Overview</a></li>
               <li><a href="#design">Design</a></li>
               <li><a href="#development">Development</a></li>
@@ -131,23 +162,23 @@
           </div>
       </div>
 
-      <div class="col-lg-10 col-xl-9 offset-xl-1 offset-lg-0">
-          <div class="section">
+      <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 main">
+          <div class="section" id="overview">
             <h2 class="section-title">Overview</h2>
                 <p class="mx-1">As NPR’s in-house technology research & development center, NPR Labs provides a variety of tools to assist public broadcasters nationwide. Its Mapping And Population System (MAPS) is an interactive application that provides terrain-sensitive coverage maps for reception of all public radio and television stations in the U.S. </p>
                 <p>During my internship in the spring of 2017, I worked as part of a small team to build a new version of the tool from the ground up.</p>
-                <p class="lead"><strong>Role:</strong> UI/UX Designer</p>
-                <p class="lead"><strong>Team:</strong> Christian Wood (Developer), Alice Goldfarb (Manager)</p>
+                <p class=""><strong>Role:</strong> UI/UX Designer</p>
+                <p class=""><strong>Team:</strong> Christian Wood (Developer), Alice Goldfarb (Manager)</p>
           </div>
 
           <div class="img-section">
               <div class="col-12 my-1">
-                <h3 class="text-center">Title</h3>
+                <h3 class="text-center">Before</h3>
                 <img class="img-fluid" src="images/npr/map-before.png" style="width:"/></div>
                 <!-- <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div> -->
           </div>
 
-          <div class="section">
+          <div class="section" id="design">
             <h2 class="my-4">User Flows</h2>
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -155,19 +186,16 @@
 
             <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map-flow.png" style="width:"/></div>
 
-            <div class="text-section mb-4">
+            <div class="section mb-4">
                 <h2 class="text-center">Wireframes & Prototypes</h2>
                 <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map-prototypes.png" style="width:"/></div>
                 <div class="col-12"><img class="img-fluid" src="images/npr/map-mobile1.png" style="width:"/></div>
             </div>
 
-        <div class="section">
-          <div id="development">
-            <h3 class="text-center">Hi-Fidelity Build</h3>
-                  <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
-                  <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
-
-                </div>
+            <div class="section" id="development">
+              <h3 class="text-center">Hi-Fidelity Build</h3>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
             </div>
           </div>
         </div>
@@ -202,5 +230,9 @@ var wintop = $(window).scrollTop(), docheight =
   		$('.scroll-line').css('width', (scrolled + '%'));
 });
     </script>
+
+  <script>
+    $('body').scrollspy({ target: '#sidebar' })
+  </script>
   </body>
 </html>

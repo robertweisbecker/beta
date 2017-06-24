@@ -10,50 +10,21 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather:300,400,700|Lato:100,300,300i,400,400i|Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:100,300,300i,400,400i|" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style-new.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/page-style.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <!-- Custom styles for this template -->
 
-  <title>BBV-Robert Weisbecker</title>
+<title>Page Title</title>
 
 </head>
 
 <style>
-  /*
-* Globals
-*/
-
-
-/*@media (min-width: 48em) {
-html {
-  font-size: 18px;
-}*/
-
-}
-
-
-.section-meta {
-  color: #F95959;
-  font-weight: 400;
-}
-
-.main {
-max-width: 60rem;
-}
-
-.main p {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 2rem;
-  font-family: 'Merriweather';
-
-}
 
 .personas img {
   width: 100%;
@@ -61,276 +32,199 @@ max-width: 60rem;
   box-shadow:  0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
 }
 
-/*.jumbotron {
-  background: #494D57 url("images/npr/map-header.png") center center no-repeat;
-  background-size: auto 100%;
-  height: 100%;
-  min-height: 400px;
-}*/
-
 .jumbotron {
-  background: #494D57 url("images/baltimore-beach/bbv-header.jpg") center center no-repeat;
+  background: #494D57 url("images/baltimore-beach/bbv-header.png") left center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   opacity:;
   height: 100%;
-  min-height: 20rem;
-}
-
-
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 150px;
-  margin: 0;
-}
-
-/*
-* Override Bootstrap's default container.
-*/
-
-
-.section-header {
-padding-bottom: 1.25rem;
-margin-bottom: 2rem;
-border-bottom: .05rem solid #eee;
-}
-.section-title {
-margin-bottom: 0;
-font-size: 2rem;
-font-weight: normal;
-}
-.section-description {
-font-size: 1.1rem;
-color: #999;
-}
-
-@media (min-width: 40em) {
-/*.jumbotron {
-   min-height: 200px;
-   background-size: auto;*/
-}
-
-}
-
-.sidebar {
-  margin-top: 3rem;
-  margin-left: 10%;
-  font-size: .87rem;
-}
-
-.sidebar ol li {
-  line-height: 2rem;
-  font-family: 'Work Sans';
-}
-
-
-.sidebar-inset p:last-child,
-.sidebar-inset ul:last-child,
-.sidebar-inset ol:last-child {
-margin-bottom: 0;
-}
-
-
-/* Pagination */
-.pagination {
-margin-bottom: 4rem;
-}
-.pagination > .btn {
-border-radius: 2rem;
-}
-
-
-/*
-* Blog posts
-*/
-
-.section {
-margin: 2rem auto;
-}
-
-.section-title {
-margin-bottom: 1rem;
-font-size: 2.5rem;
-}
-
-.section-meta {
-margin-bottom: 1rem;
-color: #999;
-}
-
-
-/*
-* Footer
-*/
-
-.footer {
-padding: 2.5rem 0;
-color: #999;
-text-align: center;
-background-color: #f9f9f9;
-border-top: .05rem solid #e5e5e5;
-}
-.footer p:last-child {
-margin-bottom: 0;
+  min-height: 25rem;
+  color: white;
 }
 
 </style>
 
-
-
 <body>
-<!--nav -->
-  <div class="sticky-top">
-    <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
-      <!-- <div class="container"> -->
-      <a class="navbar-brand" href="index.html">weisbecker.design</a>
-      <ul class="nav navbar-nav ml-auto">
-    		<li class="nav-item">
-          <a href="index.html#intro" class="nav-link">About</a>
-        </li>
-    		<li class="nav-item">
-          <a href="index.html#filters" class="nav-link">Work</a>
-        </li>
-    		<li class="nav-item">
-          <a href="index.html#contact"class="nav-link">Contact</a>
-        </li>
-    	</ul>
-    </nav>
-    <div class="scroll-line">
+  <!--- header --->
+
+    <div class="fixed-top hidden-sm-down">
+      <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+        <a class="navbar-brand" href="index.html">Robert Weisbecker</a>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#filters" class="nav-link">Portfolio</a>
+          </li>
+      		<li class="nav-item">
+            <a href="#intro" class="nav-link">Bio</a>
+          </li>
+      		<li class="nav-item">
+            <a href="#contact"class="nav-link">Workshop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact"class="nav-link">Studio</a>
+          </li>
+      	</ul>
+      </nav>
+      <div class="scroll-line"></div>
     </div>
-  </div>
 
-<!-- jumbotron -->
-  <div class="jumbotron jumbotron-fluid" style="">
-    <div class="container text-center"></div>
-  </div>
+    <div class="hidden-md-up">
+      <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+        <a class="navbar-brand" href="index.html">Robert Weisbecker</a>
+      </nav>
+    </div>
 
-<!-- body -->
-  <div class="container main">
-    <div class="row">
-<!-- sidebar -->
-      <div class="col-md-2 pull-xl-1 hidden-md-down">
-          <div class="sidebar sticky ml-0">
-            <p class="lead">Jump to:</p>
-            <ol class="list-unstyled">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Proposal</a></li>
-              <li><a href="#">Conclusion</a></li>
-            </ol>
-          </div>
+    <div class="fixed-bottom hidden-md-up">
+      <div class="scroll-line"></div>
+      <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+        <ul class="nav mx-auto">
+          <li class="nav-item">
+            <a href="#filters" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#filters" class="nav-link">Portfolio</a>
+          </li>
+      		<li class="nav-item">
+            <a href="#intro" class="nav-link">Bio</a>
+          </li>
+      		<li class="nav-item">
+            <a href="#contact"class="nav-link">Workshop</a>
+          </li>
+      	</ul>
+      </nav>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center">
+      <div class="col-10 offset-lg-2 offset-sm-1">
+        <h1 class="display-3">Baltimore Beach Volleyball:</h1>
+        <h2 class="display-4">Research & Prototyping</h2>
       </div>
+    </div>
 
-<!-- page title -->
-      <div class="col-lg-10 align-self-center">
-        <div class="section-header">
-          <h1 class="section-title">Baltimore Beach Volleyball:<br>Website Redesign</h1>
-          <p class="section-meta">Maryland Institute College of Art, Feb. 2017</p>
-          <!-- <span class="badge badge-pill badge-default">User Research</span>
-          <span class="badge badge-pill badge-default">Personas</span>
-          <span class="badge badge-pill badge-default">Prototyping</span> -->
-      </div>
 
-<!-- paragraph -->
-      <div class="content">
-<!-- intro -->
-        <div id="intro">
-          <dl class="row">
-            <dt class="col-sm-2">Brief:</dt>
-              <dd class="col-sm-10">Assess the existing Baltimore Beach Volleyball website and propose a redesign in the form of an interactive prototype that addresses stakeholder & user needs.</dd>
-            <dt class="col-sm-2">Role:</dt>
-              <dd class="col-sm-10">UX Designer</dd>
-            <dt class="col-sm-2">Team:</dt>
-              <dd class="col-sm-10">Isaac Gertman, Project Manager</dd>
-              <dd class="col-sm-10 offset-sm-2">Yao Adantor, Strategist</dd>
-              <dd class="col-sm-10 offset-sm-2">Kaitlin Bensley, IA</dd>
-            </dt>
-          </dl>
+  <!--- Container --->
 
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-<!-- images -->
-        <img class="img-fluid my-1" src="images/baltimore-beach/bbv-before.png" style="width:">
-        <img class="img-fluid my-1" src="images/baltimore-beach/bbv-menu-before.png" style="width:">
-      </div>
-
-<!-- body -->
-          <div class="section">
-            <hr>
-            <h2 class="section-title pt-3">Research</h2>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-              <br>
-              <h2 class="mb-3">Site Analytics</h2>
-                <p>87% of users navigate directly to the homepage.</p>
-                <p>52.6% of users spend less than 30 seconds on the site.</p>
-                <p>Over 60% of users access the site via mobile.</p>
-                <p class="lead">The homepage is the area of greatest concern. Given user behavior, we must resolve the clarity and presentation of information so that players are able to quickly access only the most vital information. More, the new website should be responsive to accomodate users on the go.</p>
-                <br>
-
-              <h2>Stakeholder Interviews</h2>
-                <p class="">Owner Needs: Updated design, nice pictures, clear way for users to get involved, few complaints (user error)</p>
-                <p class="">Content Manager Needs: A CMS that works, Clean database administration in MSSQL—without having to remake everything in MySQL, better serve the questions of new players</p>
-                <p class="">Employee Needs: An easier to use site, nice pictures, clearer and more refined typographic hierarchy, clearer IA</p>
-                <br>
-
-              <h2 class="mb-3">User Personas</h2>
-              <br><p class="lead">The homepage is the area of greatest concern. Given user behavior, we must resolve the clarity and presentation of information so that players are able to quickly access only the most vital information. More, the new website should be responsive to accomodate users on the go.</p>
-              <br>
-
-          <div class="container-fluid personas">
-            <div class="row">
-              <div class="col-6">
-                <img class="img-fluid my-1" src="images/baltimore-beach/persona1.png" style="width:">
-              </div>
-              <div class="col-6">
-                <img class="img-fluid my-1" src="images/baltimore-beach/persona2.png" style="width:">
-              </div>
-              <div class="col-6">
-                <img class="img-fluid my-1" src="images/baltimore-beach/persona3.png" style="width:">
-              </div>
-              <div class="col-6">
-                <img class="img-fluid my-1" src="images/baltimore-beach/persona4.png" style="width:">
-              </div>
-              <div class="col-6">
-                <img class="img-fluid my-1" src="images/baltimore-beach/persona5.png" style="width:">
-              </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 offset-md-1 offset-lg-2 hidden-md-down">
+          <br>
+            <div id="sidebar" class="sticky">
+                <h6 class="">Jump to:</h6>
+                  <ol class="list-unstyled">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#strategy">Strategy</a></li>
+                <li><a href="#prototype">Prototype</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+              </ol>
             </div>
+          </div>
 
-            <div class="section">
-              <h2 class="section-title">Prototype</h2>
-                <p class="lead mb-1"></p>
-                <p class="lead mb-1"></p>
-                <ul>
-                  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                  <li>Donec id elit non mi porta gravida at eget metus.</li>
-                  <li>Nulla vitae elit libero, a pharetra augue.</li>
-                </ul>
-                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-                <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-            </div><!-- /.section -->
 
-            <div class="section">
-              <h2 class="section-title">Conclusion</h2>
+  <!--- Main --->
 
-              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-              <blockquote>
-                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </blockquote>
-              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            </div><!-- /.section -->
-          </div><!-- /.content -->
+          <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 main">
+          <div class="section" id="overview">
+            <h2 class="section-title">Overview</h2>
+              <dl class="row">
+                <dt class="col-sm-2">Brief:</dt>
+                  <dd class="col-sm-10">Assess the existing Baltimore Beach Volleyball website and propose a redesign in the form of an interactive prototype that addresses stakeholder & user needs.</dd>
+                <dt class="col-sm-2">Role:</dt>
+                  <dd class="col-sm-10">UX Designer</dd>
+                <dt class="col-sm-2">Team:</dt>
+                  <dd class="col-sm-10">Isaac Gertman, Project Manager</dd>
+                  <dd class="col-sm-10 offset-sm-2">Yao Adantor, Strategist</dd>
+                  <dd class="col-sm-10 offset-sm-2">Kaitlin Bensley, IA</dd>
+                </dt>
+              </dl>
+          </div>
+
+          <div class="img-section">
+              <div class="col-12 my-1">
+                <h3 class="text-center">Title</h3>
+                <img class="img-fluid my-1" src="images/baltimore-beach/bbv-before.png" style="width:">
+                <img class="img-fluid my-1" src="images/baltimore-beach/bbv-menu-before.png" style="width:">
+              </div>
+          </div>
+
+          <div class="section">
+            <h2 class="my-4">Research</h2>
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+
+            <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map-flow.png" style="width:"/></div>
+
+            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <br>
+            <h2 class="mb-3">Site Analytics</h2>
+              <p>87% of users navigate directly to the homepage.</p>
+              <p>52.6% of users spend less than 30 seconds on the site.</p>
+              <p>Over 60% of users access the site via mobile.</p>
+              <p class="lead">The homepage is the area of greatest concern. Given user behavior, we must resolve the clarity and presentation of information so that players are able to quickly access only the most vital information. More, the new website should be responsive to accomodate users on the go.</p>
+              <br>
+
+            <h2>Stakeholder Interviews</h2>
+              <p class="">Owner Needs:
+                <p class="blockquote">"Updated design, nice pictures, clear way for users to get involved, few complaints (user error)"</p>
+              <p class="">Content Manager Needs:
+                <p class="blockquote">"A CMS that works, Clean database administration in MSSQL—without having to remake everything in MySQL, better serve the questions of new players"</p>
+              <p class="">Employee Needs:
+                <p class="blockquote">"An easier to use site, nice pictures, clearer and more refined typographic hierarchy, clearer IA"</p>
+              <br>
+
+            <h2 class="mb-3">User Personas</h2>
+            <br><p class="lead">The homepage is the area of greatest concern. Given user behavior, we must resolve the clarity and presentation of information so that players are able to quickly access only the most vital information. More, the new website should be responsive to accomodate users on the go.</p>
+            <br>
+
+        <div class="container-fluid personas">
+          <div class="row">
+            <div class="col-6">
+              <img class="img-fluid my-1" src="images/baltimore-beach/persona1.png" style="width:">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid my-1" src="images/baltimore-beach/persona2.png" style="width:">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid my-1" src="images/baltimore-beach/persona3.png" style="width:">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid my-1" src="images/baltimore-beach/persona4.png" style="width:">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid my-1" src="images/baltimore-beach/persona5.png" style="width:">
+            </div>
+          </div>
         </div>
-        <!-- /.row -->
-      </div>
-    </div>
-  </div><!-- /.container -->
-</div>
+
+          <div class="section">
+            <h2 class="section-title">Prototype</h2>
+              <p class="lead mb-1"></p>
+              <p class="lead mb-1"></p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+          </div><!-- /.section -->
+
+          <div class="section">
+            <h2 class="section-title">Conclusion</h2>
+
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          </div>
+      </div> <!--/.row -->
+    </div><!-- /.content -->
+  </div><!-- /container -->
+
   <footer class="footer">
     <p>
       <a href="#">Back to top</a>

@@ -36,6 +36,10 @@ font-family: 'Lato';
   font-family: 'Work Sans';
 }
 
+.nav-item {
+  font-size: .87em;
+}
+
 .scroll-line{
   height: 2px;
   margin-bottom: 0px;

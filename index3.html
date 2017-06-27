@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
   <link rel="icon" href="favicon.ico?" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Athiti:200,300,400,700|Work+Sans:400,700,900|Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Athiti:200,300,400,700|Work+Sans:300,400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-new.css">
 
@@ -152,6 +152,7 @@ color: white;
   /*color: #FCF8CD;*/
   /*color: #3D4957;*/
   height: 90vh;
+  margin-bottom: 5vh;
 
 }
 
@@ -305,9 +306,13 @@ color: white;
 }
 
 .section-subtitle {
-  font-family: 'Athiti';
+  font-family: 'Work Sans';
   font-weight: 300;
 }
+
+/*button.btn.btn-secondary.btn-lg {
+  border-radius: 0 !important;
+}*/
 
 
 @media (max-width: 48rem) {
@@ -337,16 +342,16 @@ color: white;
 
 <nav class="navbar navbar-toggleable-xl hidden-sm-down fixed-top navbar-light bg-transparent">
   <!-- <div class="container"> -->
-  <a class="navbar-brand" href="#">Robert Weisbecker</a>
+  <a class="navbar-brand" href="#"><img src="images/face1.png" width="auto" height="30" class="d-inline-block align-top mr-2" alt="">Robert Weisbecker</a>
   <ul class="nav navbar-nav ml-auto">
     <li class="nav-item">
-      <a href="#filters" class="nav-link active">Portfolio</a>
+      <a href="#filters" class="nav-link active text-uppercase">Portfolio</a>
     </li>
 		<li class="nav-item">
-      <a href="#about" class="nav-link">About/Contact</a>
+      <a href="#about" class="nav-link text-uppercase">About</a>
     </li>
 		<li class="nav-item">
-      <a href="#contact"class="nav-link">Workshop</a>
+      <a href="#contact"class="nav-link text-uppercase">Workshop</a>
     </li>
 	</ul>
 </nav>
@@ -393,37 +398,6 @@ color: white;
 </div>
 </div>
 
-
-<!-- <hr class="mb-4"> -->
-
-
-
-
-<!-- <div class="jumbotron jumbotron-fluid hero">
-  <div class="container">
-  	<div class="row">
-  		<div class="col-xs-8 col-sm-12">
-    	</div>
-    	</div>
-
-	 </div>
-</div> -->
-
-<!-- <div class="container-fluid intro" id="intro">
-	<div class="row">
-		<div class="col-md-2 hidden-xs"></div>
-		<div class="col-xs-12 col-md-8">
-			<h1 class="text-center">Hi, I'm Bob.</h1>
-
-			<br><p class="body">I'm a 2016 graduate of the University of Michigan and current graduate student at MICA (MICA), in Baltimore, MD, where I'm pursuing a Master's in User Experience Design. <br>
-			<br>Here you'll find a collection of my work, ranging from paintings and drawings to UX design and some reflections on my current coursework. Hit the link below to see my resume & feel free to contact me by sending a message below or shooting an email my way. Thanks for visiting.</p><br>
-			<a href="RobertWeisbecker.resume.12-16.pdf"><button class="btn-default pull-right">Resume -></button></a>
-		</div>
-		<div class="col-md-2 hidden-xs"></div>
-	</div>
-</div> -->
-
-
 <!-- portfolio meat --------------------------------------------------->
 
 	<!-- fuck yeah buttons --------------------------------------->
@@ -433,14 +407,14 @@ color: white;
 		<div class="row mb-5">
 			<div class="col-12 text-left">
 				<h1 class="section-title">Selected Work</h1>
-        <h4 class="text-muted section-subtitle">Below are some recent projects.</h4>
-        <h4 class="text-muted section-subtitle">To see what I'm currently working on, visit my <a href="workshop.html">Workshop</a>.</h4>
+        <p class="text-muted section-subtitle lead">Below are some recent projects.
+        <br>To see what I'm currently working on, visit my <a href="workshop.html">Workshop</a>.</p>
 			</div>
 		</div>
 
 <!-- GRID --------------------------------------------------->
 
-    <div class="row">
+    <div class="row mb-5">
     <div class="container">
       <div class="row" data-aos="fade-up" >
         <div class="col-lg-4 col-md-6 grid-item npr">
@@ -573,16 +547,14 @@ color: white;
 
   </div>
 </div>
-</section>
+</div>
 
-<section>
-  <div class="container-fluid grid-section">
-		<div class="row">
-			<div class="col-12 text-center headline">
-				<h3 class="text-center m-sm-5">Workshop</h3>
-			</div>
-		</div>
+  <div class="row mb-5">
+    <button type="button" class="btn btn-secondary btn-lg rounded-0 mx-auto">Workshop</button>
   </div>
+
+</div>
+</section>
 
   <footer class="text-muted">
     <div class="container">
@@ -597,8 +569,7 @@ color: white;
   </footer>
 
 
-	</div>
-</section>
+
 
 <script src="js//aos.js"></script>
 <script> AOS.init();</script>

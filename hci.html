@@ -16,7 +16,6 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/page-style.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <!-- Custom styles for this template -->
 
@@ -28,13 +27,15 @@
 
 .jumbotron {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("images/hci/hci-bg.png");
-  background-position: center center;
+  background-position: top left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
   height: 100%;
-  min-height: 20rem;
+  min-height: 25rem;
   color: white;
 }
+
 
 </style>
 
@@ -91,7 +92,7 @@
     </nav>
   </div>
 
-  <div class="jumbotron jumbotron-fluid" style="">
+  <div class="jumbotron jumbotron-fluid d-flex align-items-center" style="">
     <div class="col-10 offset-lg-2 offset-sm-1">
       <h1 class="display-3">Street Parking:</h1>
       <h2 class="display-4">Human Factors Case Study</h2>
@@ -103,18 +104,26 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 offset-md-1 offset-lg-2 hidden-md-down">
+      <div class="col-md-2 offset-md-1 offset-lg-2 hidden-md-down sidebar-col">
         <br>
-          <div id="sidebar" class="sticky">
-              <h6 class="">Jump to:</h6>
-                <ol class="list-unstyled">
-              <li><a href="#overview">Overview</a></li>
-              <li><a href="#design">Design</a></li>
-              <li><a href="#development">Development</a></li>
-              <li><a href="#conclusion">Conclusion</a></li>
-            </ol>
-          </div>
-        </div>
+          <nav id="sidebar" class="sticky">
+                <ul class="nav flex-column">
+                  <h6 class="">Jump to:</h6>
+                  <li class="nav-item">
+                      <a href="#overview" class="active nav-link">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#design" class="nav-link">Design</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#development" class="nav-link">Development</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#conclusion" class="nav-link">Conclusion</a>
+                  </li>
+                </ul>
+          </nav>
+      </div>
 
 
 <!--- Main --->
@@ -184,15 +193,15 @@
 
               <h4 class="text-center">Pain Points</h4>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-lg-4">
                     <h5>Incorrect Space Input</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4">
                     <h5>Interrupted Progress</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4">
                     <h5>Over/Under Paying</h5>
                     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                   </div>
@@ -268,30 +277,39 @@
     </p>
   </footer>
 
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-<script>
-$(window).scroll(function(){
-var wintop = $(window).scrollTop(), docheight =
-
-    $(document).height(), winheight = $(window).height();
- 			var scrolled = (wintop/(docheight-winheight))*100;
-
-  		$('.scroll-line').css('width', (scrolled + '%'));
-});
-    </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <script>
-    $('body').scrollspy({ target: '#sidebar' })
+
+  $('body').scrollspy({ target: '.sidebar-col' });
+
+  var offset = 80;
+
+  $('.nav li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+  });
+
+  $(window).scroll(function(){
+  var wintop = $(window).scrollTop(), docheight =
+
+      $(document).height(), winheight = $(window).height();
+   			var scrolled = (wintop/(docheight-winheight))*100;
+
+    		$('.scroll-line').css('width', (scrolled + '%'));
+  });
+
   </script>
-  </body>
+
+  <script>
+    $(window).scroll(function(){
+    $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 400);
+     });
+  </script>
+
+</body>
+
 </html>

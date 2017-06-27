@@ -86,6 +86,7 @@ font-family: 'Lato';
   overflow-x: scroll;
   font-family: 'Work Sans';
   max-height: 60px;
+  font-size: 16px;
 }
 
 .scroll-line{
@@ -104,7 +105,7 @@ font-family: 'Lato';
 max-width: rem;
 }
 
-p {
+p, .main li {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.8rem;
@@ -137,6 +138,10 @@ p {
   font-size: .87rem;
   text-align: ;
   background-color: #;
+}
+
+.sidebar-col {
+  max-width: 10rem !important;
 }
 
 #sidebar ol {

@@ -9,12 +9,12 @@
   <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
   <link rel="icon" href="favicon.ico?" type="image/x-icon">
 
-
-  <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:400,700,900|Poppins:400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Athiti|Work+Sans:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Athiti:200,300,400,700|Work+Sans:400,700,900|Lato:100,300,300i,400,400i" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-new.css">
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -40,6 +40,14 @@
   display: none;
 }
 
+body {
+  /*background: #f9f8f1;  /* fallback for old browsers */*/
+  background: -webkit-linear-gradient(to bottom, #ffffff 0%, #f8f7f9 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #f8f7f9 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
 /**
 -----------------------------
   fill gradients
@@ -63,14 +71,23 @@
   background: linear-gradient(-45deg, #E5E5BE 0%, #003973 100%);
 }
 
+/*.gradient-afternoon {
+  background: linear-gradient(-90deg, #303395 0%, #B6EDF7 100%);
+  background: -webkit-linear-gradient(-90deg, #303395 0%, #B6EDF7 100%);
+}*/
+
 .gradient-afternoon {
-  background: linear-gradient(0deg, #303395 0%, #B6EDF7 100%);
-  background: -webkit-linear-gradient(0deg, #303395 0%, #B6EDF7 100%);
+  background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
 }
 
 .gradient-evening {
-  background: linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
-  background: -webkit-linear-gradient(-135deg, #CF396F 0%, #2D266F 100%);
+  background: #556270;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 }
 
 .gradient-sunset {
@@ -91,8 +108,10 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 }
 
 .gradient-night {
-  background: linear-gradient(90deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
-  background: -webkit-linear-gradient(90deg, #0A0924 25%, #0C082B 40%, #4A0541 100%);
+background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #0b8793 0%, #360033 70%);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #0b8793 0%, #360033 70%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
 }
 
 /**
@@ -131,16 +150,17 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 .jumbotron {
   /*color: #FCF8CD;*/
-  color: #3D4957;
-  background: #fefefe;
+  /*color: #3D4957;*/
+  height: 90vh;
 
 }
 
 .jumbotron h1 {
   margin-top:;
-  font-family: 'Rubik Mono One';
+  font-family: 'Athiti';
+  font-weight: 700;
   font-size: 4.5rem;
-  word-spacing: -36px;
+  /*word-spacing: -36px;*/
   text-overflow: wrap;
   overflow-wrap: break-word;
 }
@@ -153,13 +173,6 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   word-spacing: 0px;
   text-overflow: wrap;
 }*/
-
-
-.jumbotron h1::after {
-  content: '';
-  text-shadow: 0 8px 20px rgba(0,0,0,.5);
-  color: transparent;
-}
 
 .jumbotron p {
   font-family: 'Lato';
@@ -286,14 +299,21 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
   margin-top: 4em;
 }
 
-.headline h3 {
-  font-family: 'Work Sans';
+.section-title {
+  font-family: 'Athiti';
+  font-weight: 400;
+}
+
+.section-subtitle {
+  font-family: 'Athiti';
+  font-weight: 300;
 }
 
 
 @media (max-width: 48rem) {
   .jumbotron h1 {
-    font-size: 54px;
+    font-size: 10vw;
+    word-wrap: normal;
   }
 
   .jumbotron p.lead {
@@ -315,8 +335,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 <body>
 
-
-<nav class="navbar navbar-toggleable-xl hidden-sm-down sticky-top navbar-light bg-transparent">
+<nav class="navbar navbar-toggleable-xl hidden-sm-down fixed-top navbar-light bg-transparent">
   <!-- <div class="container"> -->
   <a class="navbar-brand" href="#">Robert Weisbecker</a>
   <ul class="nav navbar-nav ml-auto">
@@ -324,18 +343,15 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       <a href="#filters" class="nav-link active">Portfolio</a>
     </li>
 		<li class="nav-item">
-      <a href="#about" class="nav-link">Bio</a>
+      <a href="#about" class="nav-link">About/Contact</a>
     </li>
 		<li class="nav-item">
       <a href="#contact"class="nav-link">Workshop</a>
     </li>
-    <li class="nav-item">
-      <a href="#contact"class="nav-link">Studio</a>
-    </li>
 	</ul>
 </nav>
 
-<nav class="navbar navbar-toggleable-xl hidden-md-up fixed-bottom navbar-light">
+<nav class="navbar navbar-toggleable-xl hidden-md-up fixed-bottom navbar-light" data-aos="" data-aos-duration="700">
   <!-- <div class="container"> -->
   <ul class="nav navbar-nav mx-auto">
     <li class="nav-item">
@@ -353,14 +369,17 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 	</ul>
 </nav>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container-fluid">
-    <h1 class="timed-gradient mt-5 text-center" id="greeting"></h1>
-  </div>
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-      <div class="col faces"></div>
-      <div class="col-lg-8 push-lg-1">
+<div class="jumbotron jumbotron-fluid timed-gradient d-flex justify-content-center align-items-center">
+  <div class="container jumbotron-copy-slow">
+    <div class="row">
+      <div class="col-10 text-center">
+        <h1 class="" id="greeting"></h1>
+      </div>
+    </div>
+    <div class="row" data-aos="fade-down" data-aos-duration="700">
+      <div class="justify-content-center mt-5">
+      <!-- <div class="col faces"></div> -->
+      <div class="col-10">
         <p class="lead">Welcome to my portfolio.</p>
         <div id="intro">
           <p class="lead">I’m a product designer and graduate student at <a href="https://www.mica.edu/">MICA</a>.
@@ -370,9 +389,13 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       </div>
     </div>
   </div>
+  <div class="mb-4"></div>
+</div>
 </div>
 
-<hr class="my-4">
+
+<!-- <hr class="mb-4"> -->
+
 
 
 
@@ -406,19 +429,20 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 	<!-- fuck yeah buttons --------------------------------------->
 
 <section>
-<div class="container-fluid grid-section">
-		<div class="row">
-			<div class="col-12 text-center headline">
-				<h3 class="text-center m-sm-5">Selected Work</h3>
+<div data-aos="fade-up" class="container">
+		<div class="row mb-5">
+			<div class="col-12 text-left">
+				<h1 class="section-title">Selected Work</h1>
+        <h4 class="text-muted section-subtitle">Below are some recent projects.</h4>
+        <h4 class="text-muted section-subtitle">To see what I'm currently working on, visit my <a href="workshop.html">Workshop</a>.</h4>
 			</div>
 		</div>
 
 <!-- GRID --------------------------------------------------->
 
-  <div class="row">
-    <div class="container grid-container">
-      <div class="row">
-
+    <div class="row">
+    <div class="container">
+      <div class="row" data-aos="fade-up" >
         <div class="col-lg-4 col-md-6 grid-item npr">
           <a href="nprlabs.html">
           <div class="card"  data-target="#npr">
@@ -437,75 +461,75 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
         <div class="col-lg-4 col-md-6 grid-item">
           <a href="bbv.html">
-          <div class="card mb-3"  data-target="#bbv">
-            <img class="card-img-top img-fluid" src="images/thumb/thumb2/BBV_2.png" alt="https://www.placehold.it/700x700" />
+            <div class="card mb-3"  data-target="#bbv">
+              <img class="card-img-top img-fluid" src="images/thumb/thumb2/BBV_2.png" alt="https://www.placehold.it/700x700" />
+              <div class="card-block">
+                <h5 class="card-title">Baltimore Beach Volleyball</h5>
+                <p class="card-text card-subtitle">Maryland Institute College of Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-aos="" class="col-lg-4 col-md-6 grid-item">
+          <a href="hci.html">
+            <div class="card mb-3"  data-target="#hci">
+              <img class="card-img-top img-fluid" src="images/thumb/thumb2/HCI_4.png" />
+              <div class="card-block">
+                 <h6 class="card-title">Human Factors of Parking</h5>
+                 <p class="card-text card-subtitle">Maryland Institute College of Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-aos="" class="col-lg-3 col-md-6 grid-item commuter">
+          <div class="card"  data-target="#commuter">
+            <img class="card-img-top img-fluid" src="images/thumb/thumb2/muter.png" alt="https://www.placehold.it/700x700" />
             <div class="card-block">
-               <h5 class="card-title">Baltimore Beach Volleyball</h5>
+               <h5 class="card-title">Commuter App Project</h5>
                <p class="card-text card-subtitle">Maryland Institute College of Art</p>
             </div>
-        </div>
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 grid-item">
-        <a href="hci.html">
-        <div class="card mb-3"  data-target="#hci">
-          <img class="card-img-top img-fluid" src="images/thumb/thumb2/HCI_4.png" />
-          <div class="card-block">
-             <h6 class="card-title">Human Factors of Parking</h5>
-             <p class="card-text card-subtitle">Maryland Institute College of Art</p>
           </div>
         </div>
-        </a>
-      </div>
 
-      <div class="col-lg-3 col-md-6 grid-item commuter">
-        <div class="card"  data-target="#commuter">
-          <img class="card-img-top img-fluid" src="images/thumb/thumb2/muter.png" alt="https://www.placehold.it/700x700" />
-          <div class="card-block">
-             <h5 class="card-title">Commuter App Project</h5>
-             <p class="card-text card-subtitle">Maryland Institute College of Art</p>
+        <div data-aos="" class="col-lg-3 col-md-6 grid-item podcasts">
+          <a href="">
+          <div class="card" data-target="#podcasts">
+            <img class="card-img-top img-fluid" src="images/thumb/thumb2/podcasts.png" />
+            <div class="card-block">
+               <h6 class="card-title">Podcasts Redesign</h5>
+               <p class="card-text card-subtitle">Personal Project</p>
+            </div>
           </div>
-      </div>
-    </div>
-
-      <div class="col-lg-3 col-md-6 grid-item podcasts">
-        <a href="">
-        <div class="card" data-target="#podcasts">
-          <img class="card-img-top img-fluid" src="images/thumb/thumb2/podcasts.png" />
-          <div class="card-block">
-             <h6 class="card-title">Podcasts Redesign</h5>
-             <p class="card-text card-subtitle">Personal Project</p>
-          </div>
+          </a>
         </div>
-        </a>
-      </div>
 
-      <div class="col-lg-3 col-md-6 grid-item muxd">
-        <a href="muxd.html">
-        <div class="card"  data-target="#residency">
-          <img class="card-img-top img-fluid" src="images/muxd/muxd-rectangle.png" >
-          <div class="card-block">
-             <h6 class="card-title">Powells.com & Nature.org</h5>
-             <p class="card-text card-subtitle">UX Foundations, MICA</p>
+        <div data-aos="" class="col-lg-3 col-md-6 grid-item muxd">
+          <a href="muxd.html">
+          <div class="card"  data-target="#residency">
+            <img class="card-img-top img-fluid" src="images/muxd/muxd-rectangle.png" >
+            <div class="card-block">
+               <h6 class="card-title">Powells.com & Nature.org</h5>
+               <p class="card-text card-subtitle">UX Foundations, MICA</p>
+            </div>
           </div>
-      </div>
-      </a>
-    </div>
-
-    <div class="col-lg-3 col-md-6 grid-item residency">
-      <a href="residency.html">
-      <div class="card" data-target="#residency">
-        <img class="card-img-top img-fluid" src="images/thumb/thumb2/Registrar_1.png" alt="https://www.placehold.it/700x700" >
-        <div class="card-block">
-           <h6 class="card-title">UofM Web Design</h5>
-           <p class="card-text card-subtitle">Stamps School of Art & Design</p>
+          </a>
         </div>
-      </div>
-      </a>
-    </div>
 
-    <div class="col-lg-3 col-md-6 grid-item panda2">
+        <div data-aos="" class="col-lg-3 col-md-6 grid-item residency">
+          <a href="residency.html">
+          <div class="card" data-target="#residency">
+            <img class="card-img-top img-fluid" src="images/thumb/thumb2/Registrar_1.png" alt="https://www.placehold.it/700x700" >
+            <div class="card-block">
+               <h6 class="card-title">UofM Web Design</h5>
+               <p class="card-text card-subtitle">Stamps School of Art & Design</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+    <div data-aos="" class="col-lg-3 col-md-6 grid-item panda2">
       <a href="residency.html">
       <div class="card card-inverse" style="background-color: #000; border-color: #000;">
         <img class="card-img img-fluid" src="images/thumb/thumb2/PP_2.png" alt="https://www.placehold.it/700x700" />
@@ -523,7 +547,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
     </div>
 
 
-    <div class="col-lg-3 col-md-6 grid-item panda1">
+    <div data-aos="" class="col-lg-3 col-md-6 grid-item panda1">
       <a href="residency.html">
       <div class="card" data-target="#residency">
         <img class="card-img-top img-fluid" src="images/thumb/thumb2/PP_2.png" alt="https://www.placehold.it/700x700" >
@@ -535,7 +559,7 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
       </a>
     </div>
 
-    <div class="col-lg-3 col-md-6 grid-item art">
+    <div data-aos="" class="col-lg-3 col-md-6 grid-item art">
       <a href="design.html">
       <div class="card" data-target="#art">
         <img class="card-img-top img-fluid" src="images/thumb/thumb2/Art.png" alt="https://www.placehold.it/700x700" >
@@ -560,134 +584,64 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 		</div>
   </div>
 
-<!-- <section class="contact-section container-fluid" id="contact">
-	<div class="container fluid">
-		<div class="row">
-		<br><br><br><br>
-			<div class="col-lg-6 col-md-push-6">
-				<br>
-				<h2 class="hidden-sm-down">What's up?</h2>
-				<h1 class="hidden-md-up">Contact</h1><br>
-				<p class="body">If you've got any questions or comments about my work, potential opportunities, or you just want someone to bounce Westworld theories off of, then get in touch with the form here or send me a message via <a href="mailto:rpw@robertweisbecker.com">email</a> or <a href="https://www.linkedin.com/in/robertweisbecker"> LinkedIn</a>.</p><br>
-			</div>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>© 2016 Robert Weisbecker</p>
+      <p>All rights reserved.</p>
+      <br>
+      <small>(Is this legally binding?)</small>
+    </div>
+  </footer>
 
-			<div class="col-lg-6 col-md-pull-6">
-				<h1 class="hidden-xs hidden-sm">Contact</h1><br>
-				<form id="contactform" class="form-horizontal" role="form" method="post" action="https://formspree.io/rpw@robertweisbecker.com">
-
-					<div class="form-group">
-						<div class="col-sm-10">
-							<input type="text" class="form-control contact" id="name" name="name" placeholder="Name">
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="col-sm-10">
-							<input type="email" class="form-control contact" id="email" name="_replyto" placeholder="Email (required)" required>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="col-sm-10">
-							<textarea class="form-control contact" rows="6" id="message" name="message" placeholder="Your Message"></textarea>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="col-md-10 col-md-offset-7">
-							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-							<input type="hidden" name="_next" value="~weisbecr/portfolio" />
-							<input type="text" name="_gotcha" style="display:none" />
-							<br><br><br><br>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</section> -->
-
-
-
-
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<br>
-				<br>
-				<br>
-				<br>
-				<h3>© 2016 Robert Weisbecker</h3>
-				<h4>All rights reserved.</h4>
-				<p>(Is this legally binding?)</p>
-				<br>
-				<br>
-				<br>
-				<br>
-			</div>
-		</div>
 
 	</div>
 </section>
 
-<!-- MODALS --------------------------------------------------->
+<script src="js//aos.js"></script>
+<script> AOS.init();</script>
 
-<!-- Podcast Modal --------------------------------------------------->
-
-
-
-
-
-<!-- <script src="js/isotope.pkgd.min.js"></script>
-<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script> -->
 
 <script>
 
 
-var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-}
-
-$(window).scroll(function(e){
-    parallax();
-});
-
-window.sr = ScrollReveal();
-sr.reveal('.grid-item');
+// window.sr = ScrollReveal();
+// sr.reveal('.grid-item');
+//
 
 
-$(document).ready(function() {
-    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-});
+
+// $(document).ready(function() {
+//     $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+//     $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+// });
 
 function setGradientByHour(element) {
   var currentHour = new Date().getHours();
   // Morning (5am - 11am)
   if( currentHour >= 5 && currentHour < 12) {
-     element.classList.add("gradient-morning-text");
+     element.classList.add("gradient-morning");
      return;
   }
   // Afternoon (12pm - 5pm)
   if( currentHour >= 12 && currentHour < 17) {
-     element.classList.add("gradient-afternoon-text");
+     element.classList.add("gradient-afternoon");
      return;
   }
   // Evening (5pm - 8pm)
   if( currentHour >= 17 && currentHour < 20) {
-     element.classList.add("gradient-evening-text");
+     element.classList.add("gradient-evening");
      return;
   }
   // Nighttime (8pm - 5am)
   if( currentHour >= 20) {
-     element.classList.add("gradient-night-text");
+     element.classList.add("gradient-night");
      return;
   }
   if( currentHour >= 0 && currentHour <5) {
-     element.classList.add("gradient-night-text");
+     element.classList.add("gradient-night");
      return;
   }
 
@@ -734,6 +688,15 @@ function setInnerHTMLByHour(element) {
   setInnerHTMLByHour(greeting);
 
 </script>
+
+<script>
+  $(window).scroll(function(){
+  $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 400);
+   $(".jumbotron-copy").css("opacity", 1 - $(window).scrollTop() / 300);
+ 	$(".jumbotron-copy-slow ").css("opacity", 1 - $(window).scrollTop() / 800);
+ 	 });
+</script>
+
 
 </body>
 

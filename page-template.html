@@ -10,21 +10,24 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:100,300,300i,400,400i|Gentium+Basic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:300,300i,400,400i,700,900|Spectral" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/page-style.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
 
 <title>Page Title</title>
 
 </head>
 
 <style>
+
+body {
+  position: relative;
+}
 
 .jumbotron {
   background: #494D57 url("images/npr/map-header-bg.png") center center no-repeat;
@@ -34,16 +37,48 @@
   min-height: 20rem;
 }
 
+/*.section {
+  padding-top: 80px;
+  margin-top: -80px;
+}*/
+
 </style>
 
 
 
-<body>
+<body data-spy="scroll" data-target=".sidebar-col">
 
 <div class="fixed-top hidden-sm-down">
   <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+    <a data-aos="fade-down" data-aos-duration="700" class="navbar-brand" href="index.html">Robert Weisbecker</a>
+    <ul data-aos="fade-down" data-aos-duration="700" class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#filters" class="nav-link">Portfolio</a>
+      </li>
+  		<li class="nav-item">
+        <a href="#intro" class="nav-link">About/Contact</a>
+      </li>
+  		<li class="nav-item">
+        <a href="#contact"class="nav-link">Workshop</a>
+      </li>
+  	</ul>
+  </nav>
+  <div class="scroll-line"></div>
+</div>
+
+<div class="hidden-md-up">
+  <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
     <a class="navbar-brand" href="index.html">Robert Weisbecker</a>
-    <ul class="nav navbar-nav ml-auto">
+  </nav>
+</div>
+
+<div class="fixed-bottom hidden-md-up">
+  <div class="scroll-line"></div>
+  <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
+    <ul class="nav mx-auto">
+      <li class="nav-item">
+        <a href="#filters" class="nav-link">Home</a>
+      </li>
       <li class="nav-item">
         <a href="#filters" class="nav-link">Portfolio</a>
       </li>
@@ -53,101 +88,59 @@
   		<li class="nav-item">
         <a href="#contact"class="nav-link">Workshop</a>
       </li>
-      <li class="nav-item">
-        <a href="#contact"class="nav-link">Studio</a>
-      </li>
-  	</ul>
-  </nav>
-  <div class="scroll-line"></div>
-</div>
-
-<div class="fixed-bottom hidden-md-up">
-  <div class="scroll-line"></div>
-  <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a href="#filters" class="nav-link">Home</a>
-      </li>
-  		<li class="nav-item">
-        <a href="#intro" class="nav-link">Bio</a>
-      </li>
-  		<li class="nav-item">
-        <a href="#contact"class="nav-link">Workshop</a>
-      </li>
   	</ul>
   </nav>
 </div>
-
-
-<!-- <div class="container">
-  <div class="page-title-2">
-      <h1 class="display-3">NPR Labs:</h1>
-      <h2 class="display-4 mb-4"> Mapping & Population System</h2>
-      <p class="lead">Internship, Spring 2017</p>
-  </div>
-</div> -->
 
 <div class="jumbotron jumbotron-fluid" style="">
-  <div class="container text-center">
-    <h1 class="display-3"></h1>
-    <p class="lead"></p>
+  <div data-aos="fade-up" data-aos-duration="700" class="col-10 offset-lg-2 offset-sm-1">
+    <h1 class="display-3">Apple Podcasts:</h1>
+    <h2 class="display-4">Case Study</h2>
   </div>
 </div>
 
-
-<div class="page-title">
-  <div class="container">
-    <div class="col-12">
-        <h1 class="display-3">NPR Labs:</h1>
-        <h2 class="display-4 mb-4"> Mapping & Population System</h2>
-        <p class="lead">Internship, Spring 2017</p>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="container main">
+<div class="container-fluid">
 
     <div class="row">
 
-      <!-- <div class="col-12">
-        <div class="page-title">
-            <h1 class="display-3">NPR Labs:</h1>
-            <h2 class="display-4 mb-4"> Mapping & Population System</h2>
-            <p class="lead">Internship, Spring 2017</p>
-        </div>
-      </div> -->
-
-      <div class="section col-2 hidden-md-down">
-          <div class="sidebar sticky ml-2">
-            <p class="lead">Contents:</p>
-            <ol class="list-unstyled">
-              <li><a href="#overview">Overview</a></li>
-              <li><a href="#design">Design</a></li>
-              <li><a href="#development">Development</a></li>
-              <li><a href="#conclusion">Conclusion</a></li>
-            </ol>
-          </div>
+      <div data-aos="fade-up" data-aos-duration="1200" class="col-md-2 offset-md-1 offset-lg-2 hidden-md-down sidebar-col">
+        <br>
+          <nav id="sidebar" class="sticky">
+                <ul class="nav flex-column">
+                  <h6 class="">Jump to:</h6>
+                  <li class="nav-item">
+                      <a href="#overview" class="active nav-link">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#design" class="nav-link">Design</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#development" class="nav-link">Development</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#conclusion" class="nav-link">Conclusion</a>
+                  </li>
+                </ul>
+          </nav>
       </div>
 
-      <div class="col-lg-10 col-xl-9 offset-xl-1 offset-lg-0">
-          <div class="section">
-            <h2 class="section-title">Overview</h2>
+      <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 main">
+          <div data-aos="fade-up" class="section" id="overview">
+            <h2 class="section-title">Purpose</h2>
                 <p class="mx-1">As NPR’s in-house technology research & development center, NPR Labs provides a variety of tools to assist public broadcasters nationwide. Its Mapping And Population System (MAPS) is an interactive application that provides terrain-sensitive coverage maps for reception of all public radio and television stations in the U.S. </p>
                 <p>During my internship in the spring of 2017, I worked as part of a small team to build a new version of the tool from the ground up.</p>
-                <p class="lead"><strong>Role:</strong> UI/UX Designer</p>
-                <p class="lead"><strong>Team:</strong> Christian Wood (Developer), Alice Goldfarb (Manager)</p>
+                <p class=""><strong>Role:</strong> UI/UX Designer</p>
+                <p class=""><strong>Team:</strong> Christian Wood (Developer), Alice Goldfarb (Manager)</p>
           </div>
 
           <div class="img-section">
               <div class="col-12 my-1">
-                <h3 class="text-center">Title</h3>
+                <h3 class="text-center">Before</h3>
                 <img class="img-fluid" src="images/npr/map-before.png" style="width:"/></div>
                 <!-- <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div> -->
           </div>
 
-          <div class="section">
+          <div class="section" id="design">
             <h2 class="my-4">User Flows</h2>
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -155,20 +148,24 @@
 
             <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map-flow.png" style="width:"/></div>
 
-            <div class="text-section mb-4">
+            <div class="section mb-4">
                 <h2 class="text-center">Wireframes & Prototypes</h2>
                 <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map-prototypes.png" style="width:"/></div>
                 <div class="col-12"><img class="img-fluid" src="images/npr/map-mobile1.png" style="width:"/></div>
             </div>
 
-        <div class="section">
-          <div id="development">
-            <h3 class="text-center">Hi-Fidelity Build</h3>
-                  <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
-                  <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
-
-                </div>
+            <div class="section" id="development">
+              <h3 class="text-center">Hi-Fidelity Build</h3>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
             </div>
+
+            <div class="section" id="conclusion">
+              <h3 class="text-center">Hi-Fidelity Build</h3>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
+            </div>
+
           </div>
         </div>
     </div><!-- /.content -->
@@ -181,26 +178,42 @@
     </p>
   </footer>
 
+  <script src="js//aos.js"></script>
+  <script> AOS.init();</script>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<script>
-$(window).scroll(function(){
-var wintop = $(window).scrollTop(), docheight =
+  <script>
 
-    $(document).height(), winheight = $(window).height();
- 			var scrolled = (wintop/(docheight-winheight))*100;
+  $('body').scrollspy({ target: '.sidebar-col', offset: 100 });
 
-  		$('.scroll-line').css('width', (scrolled + '%'));
-});
-    </script>
-  </body>
+  var offset = 80;
+
+  $('.sidebar-col li a').click(function(event) {
+      event.preventDefault();
+      $($(this).attr('href'))[0].scrollIntoView();
+      scrollBy(0, -offset);
+  });
+
+  $(window).scroll(function(){
+  var wintop = $(window).scrollTop(), docheight =
+
+      $(document).height(), winheight = $(window).height();
+   			var scrolled = (wintop/(docheight-winheight))*100;
+
+    		$('.scroll-line').css('width', (scrolled + '%'));
+  });
+
+  </script>
+
+  <script>
+    $(window).scroll(function(){
+    $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 200);
+     });
+  </script>
+
+</body>
+
 </html>

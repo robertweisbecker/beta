@@ -10,15 +10,12 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:300,300i,400,400i,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400+700+900|Merriweather:300,400,700|Lato:300,300i,400,400i,700,900|Spectral" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/page-style.css">
-
-  <!-- Custom styles for this template -->
-
 <title>Page Title</title>
 
 </head>
@@ -26,27 +23,22 @@
 <style>
 
 body {
-  background-color: #fafafa;
+  position: relative;
 }
 
 .jumbotron {
-  background: #494D57 url("images/npr/npr-bg.png") left center no-repeat;
+  background: #494D57 url("images/npr/map-header-bg.png") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
-  min-height: 30rem;
-}
-
-.section {
-  padding-top: 80px;
-  margin-top: -80px;
+  min-height: 20rem;
 }
 
 </style>
 
 
 
-<body data-spy="scroll" data-target="#sidebar" data-offset="-20">
+<body data-spy="scroll" data-target=".sidebar-col" data-offset="">
 
 <div class="fixed-top hidden-sm-down">
   <nav class="navbar navbar-toggleable-xl navbar-light bg-transparent">
@@ -56,13 +48,10 @@ body {
         <a href="#filters" class="nav-link">Portfolio</a>
       </li>
   		<li class="nav-item">
-        <a href="#intro" class="nav-link">Bio</a>
+        <a href="#intro" class="nav-link">About/Contact</a>
       </li>
   		<li class="nav-item">
         <a href="#contact"class="nav-link">Workshop</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact"class="nav-link">Studio</a>
       </li>
   	</ul>
   </nav>
@@ -95,67 +84,16 @@ body {
   </nav>
 </div>
 
-<div class="jumbotron jumbotron-fluid d-flex align-items-center" style="">
+<div class="jumbotron jumbotron-fluid" style="">
   <div class="col-10 offset-lg-2 offset-sm-1">
-    <h1 class="display-3 mt-2">NPR Labs:</h1>
-    <h2 class="display-4"> Mapping & Population System</h2>
+    <h1 class="display-3">Apple Podcasts:</h1>
+    <h2 class="display-4">Case Study</h2>
   </div>
 </div>
-
-
-<!-- <div class="page-title hidden-md-up">
-  <div class="container">
-      <h1 class="">NPR Labs:</h1>
-      <h2 class="mb-2"> Mapping & Population System</h2>
-      <p class="lead">Internship, Spring 2017</p>
-  </div>
-</div>
-
-<div class="page-title hidden-sm-down">
-  <div class="container">
-    <div class="col-12">
-        <h1 class="display-3">NPR Labs:</h1>
-        <h2 class="display-4 mb-4"> Mapping & Population System</h2>
-        <p class="lead">Internship, Spring 2017</p>
-    </div>
-  </div>
-</div> -->
-
-
 
 <div class="container-fluid">
 
     <div class="row">
-
-      <!-- <div class="col-12">
-        <div class="page-title">
-            <h1 class="display-3">NPR Labs:</h1>
-            <h2 class="display-4 mb-4"> Mapping & Population System</h2>
-            <p class="lead">Internship, Spring 2017</p>
-        </div>
-      </div> -->
-
-      <!-- <div class="col-2 hidden-md-down">
-          <div id="sidebar" class="sticky">
-            <p class="">Jump to:</p>
-            <nav class="nav flex-column">
-              <ul>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#overview">Overview</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#design">Design</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#development">Development</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#conclusion">Conclusion</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-      </div> -->
 
       <div class="col-md-2 offset-md-1 offset-lg-2 hidden-md-down sidebar-col">
         <br>
@@ -180,8 +118,8 @@ body {
 
       <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 main">
           <div class="section" id="overview">
-            <h2 class="section-title">Overview</h2>
-                <p class="mx-1">As NPR’s in-house technology research & development center, <a href="http://www.nprlabs.org/">NPR Labs</a> provides a variety of tools to assist public broadcasters nationwide. Its Mapping And Population System (MAPS) is an interactive web application that provides terrain-sensitive coverage maps for reception of all public radio and television stations in the U.S. </p>
+            <h2 class="section-title">Purpose</h2>
+                <p class="mx-1">As NPR’s in-house technology research & development center, NPR Labs provides a variety of tools to assist public broadcasters nationwide. Its Mapping And Population System (MAPS) is an interactive application that provides terrain-sensitive coverage maps for reception of all public radio and television stations in the U.S. </p>
                 <p>During my internship in the spring of 2017, I worked as part of a small team to build a new version of the tool from the ground up.</p>
                 <p class=""><strong>Role:</strong> UI/UX Designer</p>
                 <p class=""><strong>Team:</strong> Christian Wood (Developer), Alice Goldfarb (Manager)</p>
@@ -195,21 +133,12 @@ body {
           </div>
 
           <div class="section" id="design">
-            <h2 class="section-title">Objective</h2>
-              <h4>Project Needs</h4>
-                <p>Last updated in 2011, the MAPS tool was in need of a dramatic overhaul to both its underlying data and its core functionality. This included updating census and FCC coverage data, giving users the ability to view FCC contours in addition to signal coverages, and providing more detailed station information.</p>
-                <p>For my part, a primary challenge was to redesign the updated version to be responsive across devices.</p>
-              <h4>Significance</p>
-              <p>The maps are designed to guide station-planning efforts to improve reception and develop new services, including new FM and TV stations and translators, as well as HD radio and mobile TV.
-              <p>With an outdated interface and similarly outdated information, the map provided little of its intended utility nowadays. A new version with accurate broadcast and demographic information could assist local broadcasters in making technology and programming decisions, while providing NPR with an overview of its affiliated local stations and the greater public media landscape.
-              <p>The project took on additional importance as the future of public broadcasting was being debated by legislators just blocks away from NPR headquarters in the Capitol, as public media advocates could utilize the tool to inform public policy development.</p>
+            <h2 class="my-4">User Flows</h2>
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
 
-          <div class="section">
-            <h2 class="section-title">Process</h2>
-              <p>As with any redesign, the process began with an assessment of the current version. Working through the key user flows, I flagged potential points of friction and identified opportunities for improvement.</p>
-              <img class="img-fluid" src="images/npr/map-flow.png" style="width:"/>
-          </div>
+            <div class="col-12 my-1"><img class="img-fluid" src="images/npr/map-flow.png" style="width:"/></div>
 
             <div class="section mb-4">
                 <h2 class="text-center">Wireframes & Prototypes</h2>
@@ -222,6 +151,13 @@ body {
               <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
               <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
             </div>
+
+            <div class="section" id="conclusion">
+              <h3 class="text-center">Hi-Fidelity Build</h3>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map1.png" style="width:"/></div>
+              <div class="col-12"><img class="img-fluid" src="images/npr/map2.png" style="width:"/></div>
+            </div>
+
           </div>
         </div>
     </div><!-- /.content -->
@@ -238,27 +174,20 @@ body {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <script>
+<script>
 
-  $('body').scrollspy({ target: '.sidebar-col' });
+$('body').scrollspy({ target: '.sidebar-col' });
 
-  $(window).scroll(function(){
-  var wintop = $(window).scrollTop(), docheight =
+$(window).scroll(function(){
+var wintop = $(window).scrollTop(), docheight =
 
-      $(document).height(), winheight = $(window).height();
-   			var scrolled = (wintop/(docheight-winheight))*100;
+    $(document).height(), winheight = $(window).height();
+ 			var scrolled = (wintop/(docheight-winheight))*100;
 
-    		$('.scroll-line').css('width', (scrolled + '%'));
-  });
+  		$('.scroll-line').css('width', (scrolled + '%'));
+});
 
-  </script>
+    </script>
 
-  <script>
-    $(window).scroll(function(){
-    $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 400);
-     });
-  </script>
-
-</body>
-
+  </body>
 </html>

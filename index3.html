@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
   <link rel="icon" href="favicon.ico?" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Athiti:200,300,400,700|Work+Sans:300,400,700|Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Athiti:200,300,400,700|Work+Sans:300,400,700|Lato:100,300,300i,400,400i|Libre+Franklin:300,300i,400,400i,600" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-new.css">
 
@@ -29,6 +29,16 @@
 
 </script>
 
+<script>
+  $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar.fixed-top");
+    var $jumbotron = $(".jumbotron");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height());
+  });
+  });
+</script>
+
 <title>Robert Weisbecker</title>
 </head>
 
@@ -36,7 +46,7 @@
 
 /** hidden in progress **/
 
-.muxd, .card-label, .podcasts, .panda2 {
+.muxd, .card-label, .podcasts {
   display: none;
 }
 
@@ -109,8 +119,8 @@ background: linear-gradient(-45deg, #131337 0%, #3E2B4D 100%);
 
 .gradient-night {
 background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #0b8793 0%, #360033 70%);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #0b8793 0%, #360033 70%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to bottom, #0b8793 0%, #360033 70%);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0b8793 0%, #360033 70%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 color: white;
 }
 
@@ -151,47 +161,37 @@ color: white;
 .jumbotron {
   /*color: #FCF8CD;*/
   /*color: #3D4957;*/
-  height: 90vh;
-  margin-bottom: 5vh;
+  height: auto;
 
 }
 
-.jumbotron h1 {
-  margin-top:;
+h1#greeting {
   font-family: 'Athiti';
-  font-weight: 700;
+  font-weight: 300;
   font-size: 4.5rem;
   /*word-spacing: -36px;*/
   text-overflow: wrap;
   overflow-wrap: break-word;
 }
 
-/*.jumbotron h1 {
-  margin-top:;
-  font-family: 'Work Sans';
-  font-weight: 900;
-  font-size: 72px;
-  word-spacing: 0px;
-  text-overflow: wrap;
-}*/
 
 .jumbotron p {
-  font-family: 'Lato';
-  font-size: 1rem;
-  font-weight: 100;
+  font-family: 'Work Sans';
+  font-size: 1.2rem;
+  font-weight: 300;
   line-height: 1.6;
 }
 
 .jumbotron p.lead {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
-#intro p.lead {
+/*#intro p {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.8;
-}
+}*/
 
 .jumbotron a {
   text-decoration:none;
@@ -230,14 +230,13 @@ color: white;
     -moz-transition: all .25s cubic-bezier(.02,.01,.47,1);
     transition: all .25s cubic-bezier(.02,.01,.47,1);
     border: 1px solid #f5f5f5;
-    /*background: #F95959;*/
-    /*border-radius: 0px;*/
+    border-radius: 0px;
     color: #3D4957;
     overflow: hidden;
 }
 
 .card-title {
-  font-family: 'Work Sans';
+  font-family: 'Athiti';
 }
 
 .card img {
@@ -307,7 +306,7 @@ color: white;
 
 .section-subtitle {
   font-family: 'Work Sans';
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /*button.btn.btn-secondary.btn-lg {
@@ -316,14 +315,18 @@ color: white;
 
 
 @media (max-width: 48rem) {
-  .jumbotron h1 {
-    font-size: 10vw;
-    word-wrap: normal;
+  .jumbotron {
+    height: 680px;
   }
 
-  .jumbotron p.lead {
-    text-align: center;
-    margin-top: 2rem;
+  .jumbotron-copy-slow {
+    height:;
+    margin-top:;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+    word-wrap: normal;
   }
 
 }
@@ -331,7 +334,6 @@ color: white;
 @media (max-width: 62rem) {
     .jumbotron p.lead {
       margin-top: 2rem;
-      text-align: center;
     }
 
 }
@@ -341,22 +343,21 @@ color: white;
 <body>
 
 <nav class="navbar navbar-toggleable-xl hidden-sm-down fixed-top navbar-light bg-transparent">
-  <!-- <div class="container"> -->
   <a class="navbar-brand" href="#"><img src="images/face1.png" width="auto" height="30" class="d-inline-block align-top mr-2" alt="">Robert Weisbecker</a>
   <ul class="nav navbar-nav ml-auto">
     <li class="nav-item">
-      <a href="#filters" class="nav-link active text-uppercase">Portfolio</a>
+      <a href="#filters" class="nav-link active ">Portfolio</a>
     </li>
 		<li class="nav-item">
-      <a href="#about" class="nav-link text-uppercase">About</a>
+      <a href="#about" class="nav-link ">About</a>
     </li>
 		<li class="nav-item">
-      <a href="#contact"class="nav-link text-uppercase">Workshop</a>
+      <a href="#contact"class="nav-link ">Workshop</a>
     </li>
 	</ul>
 </nav>
 
-<nav class="navbar navbar-toggleable-xl hidden-md-up fixed-bottom navbar-light" data-aos="" data-aos-duration="700">
+<nav class="navbar navbar-toggleable-xl hidden-md-up fixed-bottom navbar-light" data-aos="fade-up" data-aos-duration="700">
   <!-- <div class="container"> -->
   <ul class="nav navbar-nav mx-auto">
     <li class="nav-item">
@@ -377,19 +378,19 @@ color: white;
 <div class="jumbotron jumbotron-fluid timed-gradient d-flex justify-content-center align-items-center">
   <div class="container jumbotron-copy-slow">
     <div class="row">
-      <div class="col-10 text-center">
+      <div class="col-md-10">
         <h1 class="" id="greeting"></h1>
       </div>
     </div>
     <div class="row" data-aos="fade-down" data-aos-duration="700">
-      <div class="justify-content-center mt-5">
+      <div class="justify-content-center mt-3">
       <!-- <div class="col faces"></div> -->
-      <div class="col-10">
+      <div class="col-md-10">
         <p class="lead">Welcome to my portfolio.</p>
         <div id="intro">
-          <p class="lead">I’m a product designer and graduate student at <a href="https://www.mica.edu/">MICA</a>.
+          <p class="">I’m a product designer and graduate student at <a href="https://www.mica.edu/">MICA</a>.
           <br>
-          <p class="lead">This summer, I'll be designing educational tools at <a href="http://everfi.com/">EverFi</a>, in Washington, DC. Previously, I’ve worked at <a href="http://www.npr.org/">NPR</a> & <a href="https://www.parkingpanda.com/">Parking Panda</a> and graduated from the <a href="http://umich.edu/">University of Michigan</a>.</p>
+          <p class="">This summer, I'll be designing educational tools at <a href="http://everfi.com/">EverFi</a>, in Washington, DC. Previously, I’ve worked at <a href="http://www.npr.org/">NPR</a> & <a href="https://www.parkingpanda.com/">Parking Panda</a> and graduated from the <a href="http://umich.edu/">University of Michigan</a>.</p>
         </div>
       </div>
     </div>
@@ -404,7 +405,7 @@ color: white;
 
 <section>
 <div data-aos="fade-up" class="container">
-		<div class="row mb-5">
+		<div class="row my-3">
 			<div class="col-12 text-left">
 				<h1 class="section-title">Selected Work</h1>
         <p class="text-muted section-subtitle lead">Below are some recent projects.
@@ -419,15 +420,15 @@ color: white;
       <div class="row" data-aos="fade-up" >
         <div class="col-lg-4 col-md-6 grid-item npr">
           <a href="nprlabs.html">
-          <div class="card"  data-target="#npr">
-					  <img class="card-img-top img-fluid" src="images/thumb/thumb2/npr.png" alt="https://www.placehold.it/700x700" />
+          <div class="card rounded-0"  data-target="#npr">
+					  <img class="card-img-top rounded-0 img-fluid" src="images/thumb/thumb2/npr.png" alt="https://www.placehold.it/700x700" />
             <!-- <div class="card-img-overlay">
               <h4 class="card-title">Card title</h4>
             </div> -->
             <div class="card-block">
                <h4 class="card-title">NPR Labs</h4>
                <p class="card-text card-subtitle">Internship, Spring 2017</p>
-               <!-- <p class="card-text card-label text-uppercase text-right"><small class="text-muted">See Project</small></p> -->
+               <!-- <p class="card-text card-label  text-right"><small class="text-muted">See Project</small></p> -->
             </div>
         </div>
         </a>
@@ -568,9 +569,6 @@ color: white;
     </div>
   </footer>
 
-
-
-
 <script src="js//aos.js"></script>
 <script> AOS.init();</script>
 
@@ -642,12 +640,12 @@ function setInnerHTMLByHour(element) {
   }
   // Evening (5pm - 3am)
   if( currentHour >= 17) {
-     element.innerHTML = "Good Evening!";
+     element.innerHTML = "Good evening!";
      return;
   }
 
   if( currentHour >= 0 && currentHour < 3) {
-     element.innerHTML = "Good Evening!";
+     element.innerHTML = "Good evening!";
      return;
   }
 
@@ -662,9 +660,9 @@ function setInnerHTMLByHour(element) {
 
 <script>
   $(window).scroll(function(){
-  $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 400);
+  $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 600);
    $(".jumbotron-copy").css("opacity", 1 - $(window).scrollTop() / 300);
- 	$(".jumbotron-copy-slow ").css("opacity", 1 - $(window).scrollTop() / 800);
+ 	$(".jumbotron-copy-slow ").css("opacity", 1 - $(window).scrollTop() / 1200);
  	 });
 </script>
 
